@@ -1,0 +1,3885 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Stolzl';
+  src: url("../fonts/Stolzl-Regular.eot");
+  src: url("../fonts/Stolzl-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Stolzl-Regular.woff2") format("woff2"), url("../fonts/Stolzl-Regular.woff") format("woff"), url("../fonts/Stolzl-Regular.ttf") format("truetype"), url("../fonts/Stolzl-Regular.svg#Stolzl-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Stolzl Book';
+  src: url("../fonts/Stolzl-Book.eot");
+  src: url("../fonts/Stolzl-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Stolzl-Book.woff2") format("woff2"), url("../fonts/Stolzl-Book.woff") format("woff"), url("../fonts/Stolzl-Book.ttf") format("truetype"), url("../fonts/Stolzl-Book.svg#Stolzl-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+input, button {
+  font-size: 100%;
+}
+
+body {
+  margin: 0; }
+
+.list {
+  padding: 0;
+  margin: 0; }
+
+.hidden {
+  display: none !important; }
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header--registration {
+  background-color: #f6f8fa; }
+
+.header--cabinet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #ffffff; }
+
+.header__menu-button {
+  width: 26px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../icons/menu.png");
+  background-size: 98%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  margin-top: 49px;
+  margin-bottom: 46px;
+  margin-left: 19px; }
+
+.header__wrapper {
+  margin-right: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.exit {
+  width: 39px;
+  height: 35px;
+  border: 0;
+  background-image: url("../icons/logout (1).svg");
+  background-size: 98%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0; }
+  .exit:hover {
+    cursor: pointer; }
+
+.container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.logo--header {
+  margin-top: 70px; }
+
+.logo__image {
+  width: 414px;
+  height: 129px;
+  display: block;
+  background-image: url("../images/logo-index.svg"); }
+  .logo__image--cabinet {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/White-logo-Trade-One.svg");
+    background-size: cover; }
+
+.languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+  .languages-icon {
+    width: 33px;
+    height: 26px;
+    background-image: url("../icons/ru.png");
+    background-size: 98%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; }
+  .languages__select {
+    margin-right: 65px;
+    margin-left: 14px;
+    border: 0; }
+
+.main {
+  background-color: #f6f8fa; }
+  .main__title {
+    text-align: center;
+    font-family: 'Stolzl', sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+    color: #223464;
+    line-height: 61.46px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .main__title--sign-up {
+      padding-top: 60px; }
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%; }
+  .form-wrapper--outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 55px; }
+  .form-wrapper--inner {
+    max-width: 476px; }
+  .form-wrapper--extra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 53px;
+    margin-bottom: 316px; }
+  .form-wrapper:first-child {
+    margin-right: 48px; }
+
+.form {
+  font-family: 'Stolzl', sans-serif;
+  font-size: 23px;
+  font-weight: 400; }
+  .form__field {
+    width: 476px;
+    line-height: 17px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    border: 0;
+    margin-bottom: 30px;
+    outline: 0;
+    color: #bbcae7; }
+
+.select {
+  background-color: #ffffff;
+  line-height: 26px;
+  position: relative; }
+  .select__arrow {
+    width: 18px;
+    height: 12px;
+    background-color: transparent;
+    background-image: url("../icons/arrow-point-down.svg");
+    background-size: 98%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    right: 27px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .select:hover {
+    cursor: pointer; }
+  .select__list {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    background-color: #ffffff; }
+  .select__item {
+    margin-bottom: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .select__item:hover {
+      background-color: #d6d4d4;
+      color: #ffffff; }
+
+.radiobuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Stolzl', sans-serif;
+  font-size: 19px;
+  color: #223464;
+  line-height: 34px;
+  margin-top: 120px; }
+  .radiobuttons__emphasize {
+    color: #223464; }
+  .radiobuttons__acceptance {
+    background-color: transparent;
+    position: relative;
+    border: 0;
+    font-family: "Stolzl - Book", sans-serif;
+    padding: 0;
+    color: #bbcae7;
+    outline: 0; }
+    .radiobuttons__acceptance-checkbox {
+      display: block;
+      content: '';
+      width: 30px;
+      height: 30px;
+      border: 3px solid #c3d0ea;
+      border-radius: 50%;
+      position: absolute;
+      top: -6px;
+      left: -47px; }
+    .radiobuttons__acceptance--active::before {
+      display: block;
+      content: '';
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      background-color: #c3d0ea;
+      position: absolute;
+      top: 2px;
+      left: -40px;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+  .radiobuttons__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 51px; }
+    .radiobuttons__wrapper--investor {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .radiobuttons__wrapper--trader {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      padding-left: 50px; }
+  .radiobuttons__trader-false, .radiobuttons__investor-false {
+    position: relative; }
+    .radiobuttons__trader-false::after, .radiobuttons__investor-false::after {
+      display: block;
+      content: '';
+      width: 30px;
+      height: 30px;
+      border: 3px solid #4c61f2;
+      border-radius: 50%;
+      position: absolute;
+      top: -7px;
+      left: -47px; }
+    .radiobuttons__trader-false--active::before {
+      display: block;
+      content: '';
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #4c61f2;
+      position: absolute;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+  .radiobuttons__investor-false--active::before {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4c61f2;
+    position: absolute;
+    top: 1px;
+    left: -39px;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  .radiobuttons__trader-true, .radiobuttons__investor-true {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -4px;
+    left: -44px;
+    z-index: 1;
+    opacity: 0; }
+  .radiobuttons__investor-true {
+    left: -44px; }
+
+.buttons-kit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 53px; }
+  .buttons-kit__choice {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    font-family: 'Stolzl';
+    font-weight: 400;
+    text-align: center;
+    color: #0a455b; }
+
+.account-existance {
+  font-family: 'Stolzl';
+  font-weight: 600;
+  color: #0b1d48; }
+  .account-existance__sign-up, .account-existance__sign-in {
+    display: inline-block;
+    font-family: 'Stolzl';
+    font-weight: 600;
+    color: #610da0;
+    border: 0;
+    background-color: transparent;
+    padding: 0; }
+    .account-existance__sign-up:hover, .account-existance__sign-in:hover {
+      cursor: pointer; }
+  .account-existance__sign-in {
+    margin-top: 14px; }
+
+.button {
+  font-family: 'Stolzl', sans-serif;
+  max-width: 476px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border: 0;
+  border-radius: 5px;
+  line-height: 17px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 0;
+  text-align: center;
+  color: #ffffff; }
+  .button--sign-up {
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+    background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%); }
+  .button--sign-in {
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+    background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%); }
+  .button__upload-icon {
+    width: 27px;
+    height: 33px;
+    position: absolute;
+    top: 50%;
+    left: 97px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    fill: #ffffff; }
+  .button--photo {
+    margin-right: 48px;
+    background-color: #4e6c8a;
+    position: relative; }
+  .button:hover {
+    cursor: pointer; }
+
+.body-cabinet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.aside {
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#22386b), to(#192249));
+  background-image: -webkit-linear-gradient(right, #22386b 0%, #192249 100%);
+  background-image: -o-linear-gradient(right, #22386b 0%, #192249 100%);
+  background-image: linear-gradient(to left, #22386b 0%, #192249 100%);
+  margin-left: auto;
+  margin-right: auto; }
+  .aside__wrapper--logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(157, 153, 199, 0.2); }
+  .aside__wrapper--user {
+    margin-top: 56px;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.menu {
+  list-style: none;
+  width: 100%;
+  padding: 0; }
+  .menu-item {
+    position: relative; }
+    .menu-item__button {
+      width: 100%;
+      padding-top: 42px;
+      padding-bottom: 42px;
+      font-family: 'Stolzl Book';
+      font-size: 19px;
+      color: #a29dcb;
+      line-height: 19px;
+      padding-left: 113px;
+      border: 0;
+      background-color: transparent;
+      text-align: start;
+      outline: none; }
+      .menu-item__button-icon {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 50%;
+        left: 48px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        fill: #a29dcb; }
+      .menu-item__button--active {
+        border-radius: 0px 7px 7px 0px;
+        cursor: pointer;
+        -webkit-transform: scaleX(1.1);
+        -ms-transform: scaleX(1.1);
+        transform: scaleX(1.1);
+        background-color: #5b75f6;
+        color: #ffffff; }
+      .menu-item__button:hover {
+        border-radius: 0px 7px 7px 0px;
+        cursor: pointer;
+        -webkit-transform: scaleX(1.1);
+        -ms-transform: scaleX(1.1);
+        transform: scaleX(1.1);
+        background-color: #5b75f6;
+        color: #ffffff; }
+      .menu-item__button:hover .menu-item__button-icon {
+        fill: #ffffff; }
+
+.copyright {
+  margin-top: 911px;
+  margin-bottom: 54px;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #a29dcb;
+  text-align: center; }
+
+.cabinet-wrapper {
+  -ms-flex-preferred-size: 80%;
+  flex-basis: 80%;
+  background-color: #f6f8fa; }
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 56px; }
+  .user__avatar {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-color: pink; }
+  .user__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-family: "Stolzl - Book";
+    font-size: 19px;
+    color: #ffffff;
+    margin-left: 30px; }
+  .user__name {
+    margin-top: 17px;
+    font-family: 'Stolzl Book'; }
+  .user__login {
+    font-family: 'Stolzl Book';
+    margin-top: 13px;
+    font-size: 13px;
+    color: #9d99c7; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: 0; }
+
+.container_nav-panel__title {
+  font-family: 'Stolzl';
+  font-size: 21px;
+  font-weight: 100;
+  text-align: left; }
+
+.container_nav-panel__steps {
+  background-color: transparent; }
+  .container_nav-panel__steps .description {
+    font-family: 'Stolzl';
+    font-size: 21px;
+    text-align: center;
+    color: #1f3262; }
+
+.container_nav-panel__card_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .container_nav-panel__card_block .card_item {
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0 20px 20px;
+    max-width: 645px;
+    height: 385px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background-color: #804eee; }
+    .container_nav-panel__card_block .card_item__title {
+      font-size: 51px;
+      font-family: 'Stolzl';
+      padding: 0;
+      margin: 0; }
+    .container_nav-panel__card_block .card_item__description {
+      width: 65%;
+      font-family: 'Stolzl Book';
+      font-size: 25px;
+      z-index: 10; }
+    .container_nav-panel__card_block .card_item__button {
+      font-family: 'Stolzl';
+      width: 55%;
+      height: 64px;
+      background-color: #fff;
+      border: 0;
+      border-radius: 5px;
+      outline: 0;
+      cursor: pointer; }
+      .container_nav-panel__card_block .card_item__button--disabled {
+        cursor: default;
+        opacity: .5; }
+        .container_nav-panel__card_block .card_item__button--disabled:hover {
+          background-color: #fff !important;
+          color: graytext !important; }
+    .container_nav-panel__card_block .card_item:nth-child(1) {
+      background-image: url("../images/card_bg1.svg");
+      background-position: right bottom;
+      background-size: 50%;
+      background-repeat: no-repeat; }
+    .container_nav-panel__card_block .card_item .svg {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      stroke: #6a46b7; }
+    .container_nav-panel__card_block .card_item:nth-child(2) {
+      background-position: right bottom;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-size: 40%;
+      background-image: url("../images/Drawing.svg"); }
+
+.account_report {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: auto;
+  position: relative;
+  max-width: 1397px;
+  height: 482px;
+  border-radius: 10px;
+  background-color: #4c61f2;
+  background-image: url("../images/assets_bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom; }
+  .account_report__wraper {
+    margin-top: 250px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: inherit; }
+  .account_report__title {
+    color: #1f3262;
+    position: absolute;
+    top: -80px;
+    color: #1f3262;
+    font-family: 'Stolzl';
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Stolzl';
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 48.01px; }
+  .account_report__container_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    margin-left: 76px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .account_report__button {
+    cursor: pointer;
+    margin-bottom: 21px;
+    max-width: 553px;
+    height: 98px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-family: 'Stolzl';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 41.45px; }
+    .account_report__button.active {
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#22386b), to(#192249));
+      background-image: -webkit-linear-gradient(bottom, #22386b 0%, #192249 100%);
+      background-image: -o-linear-gradient(bottom, #22386b 0%, #192249 100%);
+      background-image: linear-gradient(to top, #22386b 0%, #192249 100%); }
+    .account_report__button:hover {
+      background-color: #22386b; }
+  .account_report__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 76px; }
+    .account_report__info .period {
+      text-align: center;
+      opacity: 0.45;
+      color: #ffffff;
+      font-family: "Stolzl Book";
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 41.45px; }
+      .account_report__info .period a {
+        margin-right: 10px;
+        color: #fff; }
+    .account_report__info .cash {
+      color: #ffffff;
+      font-family: 'Stolzl';
+      font-size: 77px;
+      font-weight: 400;
+      line-height: 134.06px; }
+    .account_report__info .btc {
+      position: relative;
+      top: -90px;
+      color: #ffffff;
+      font-size: 31px;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: "Stolzl Book";
+      font-size: 22px;
+      font-weight: 300;
+      font-weight: 400; }
+    .account_report__info .stock_exchanges {
+      width: inherit; }
+      .account_report__info .stock_exchanges__button {
+        cursor: pointer;
+        width: 172px;
+        height: 51px;
+        border-radius: 5px;
+        background-color: #5c6dea;
+        color: #ffffff;
+        font-family: 'Stolzl';
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 49.45px;
+        margin-right: 10px; }
+        .account_report__info .stock_exchanges__button.active {
+          background-color: #ffffff;
+          color: #000; }
+        .account_report__info .stock_exchanges__button:hover {
+          background-color: #ffffff;
+          color: #000; }
+
+.my_trader {
+  font-family: 'Stolzl';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  height: 482px;
+  max-width: 1397px;
+  background-image: url("../images/mytrader_bg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  .my_trader__hazard {
+    font-family: Stolzl Book;
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: 300px;
+    height: 85px;
+    border-radius: 50px 0px 0px 50px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#c10513)), -webkit-gradient(linear, left bottom, left top, from(#000000), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #ff0000 0%, #c10513 100%), -webkit-linear-gradient(bottom, #000000 0%, #ffffff 100%);
+    background-image: -o-linear-gradient(top, #ff0000 0%, #c10513 100%), -o-linear-gradient(bottom, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, #ff0000 0%, #c10513 100%), linear-gradient(to top, #000000 0%, #ffffff 100%); }
+    .my_trader__hazard::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 10;
+      width: 56px;
+      height: 44px;
+      top: 0;
+      left: 0;
+      background-image: url("../images/risk2.svg"); }
+    .my_trader__hazard__message {
+      padding-top: 10px;
+      font-family: Stolzl;
+      height: inherit;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .my_trader__hazard__range {
+      font-size: 20px;
+      line-height: 68.05px; }
+    .my_trader__hazard__icon {
+      width: 40px;
+      height: 0px;
+      position: absolute;
+      left: 25px;
+      top: 19px; }
+  .my_trader .logo_wraper {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .my_trader__trader-logo {
+    position: relative;
+    left: -50px;
+    height: 100%;
+    max-width: 400px; }
+  .my_trader__wraper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px;
+    height: inherit;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #ffffff; }
+  .my_trader__subwrap {
+    height: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 70%; }
+  .my_trader__trader_name {
+    color: #1f3262;
+    font-family: 'Stolzl';
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 70.46px; }
+  .my_trader__trader-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .my_trader__trader-info .top::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: -156%;
+      top: 15px;
+      background-color: #c3d0ea;
+      width: 1px;
+      height: 50px; }
+    .my_trader__trader-info .top::after {
+      content: '';
+      top: 15px;
+      position: absolute;
+      right: -156%;
+      display: block;
+      background-color: #c3d0ea;
+      width: 1px;
+      height: 50px; }
+    .my_trader__trader-info .item {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .my_trader__trader-info .item .profit__value, .my_trader__trader-info .item .top__value, .my_trader__trader-info .item .subscribers__value {
+        font-family: 'Stolzl Book';
+        font-size: 55px; }
+      .my_trader__trader-info .item .profit__description, .my_trader__trader-info .item .top__description, .my_trader__trader-info .item .subscribers__description {
+        -ms-flex-item-align: center;
+        align-self: center; }
+  .my_trader .profit__value {
+    color: #31aa1d;
+    font-size: 55px;
+    font-weight: 400;
+    color: #29ac02; }
+  .my_trader .profit__term {
+    color: #1f3262;
+    font-size: 21px; }
+  .my_trader__trader-info__item {
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .my_trader__bottom-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .my_trader__bottom-side .subscription_term {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .my_trader__bottom-side .subscription_term__fin_term {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 91.44px; }
+      .my_trader__bottom-side .subscription_term__description {
+        font-family: "Stolzl Book";
+        font-size: 17px;
+        font-weight: 400; }
+  .my_trader__bottom-button {
+    color: #ffffff;
+    font-family: "Stolzl Book";
+    font-size: 17px;
+    width: 240px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #f6f8fa;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+    background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%); }
+
+@media (max-width: 1700px) {
+  .container_nav-panel .container_nav-panel__card_block .card_item {
+    width: 450px;
+    height: 260px; }
+  .container_nav-panel .container_nav-panel__card_block .card_item h3 {
+    font-size: 30px; }
+  .container_nav-panel .container_nav-panel__card_block .card_item__description {
+    font-size: 20px; }
+  .account_report .account_report__info .stock_exchanges__button {
+    width: 140px; }
+  .account_report {
+    max-width: 90%; }
+  .my_trader {
+    max-width: 90%;
+    margin-top: 240px; }
+    .my_trader__subwrap {
+      margin-left: 20px; } }
+
+@media (max-width: 1100px) {
+  .account_report .account_report__info {
+    margin-right: 10px; } }
+
+.traders-exchange {
+  background-color: #f6f8fa; }
+  .traders-exchange__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 75px; }
+  .traders-exchange__title {
+    font-family: 'Stolzl';
+    font-size: 21px;
+    font-weight: 400;
+    color: #1f3262; }
+  .traders-exchange__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1900px; }
+  .traders-exchange__card {
+    background-color: #ffffff; }
+
+.card-exchange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  margin-top: 10px; }
+  .card-exchange__inner-wrapper {
+    padding-top: 48px;
+    padding-bottom: 31px;
+    padding-right: 88px;
+    padding-left: 88px; }
+  .card-exchange__top-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .card-exchange__currency-icon {
+    display: block;
+    width: 78px;
+    height: 78px;
+    background-image: url("../icons/binance.jpg");
+    background-size: 98%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-right: 34px; }
+    .card-exchange__currency-icon--bitfinex {
+      background-image: url("../icons/bitfinex.jpg"); }
+    .card-exchange__currency-icon--bittrex {
+      background-image: url("../icons/bittrex.jpg"); }
+  .card-exchange__currency-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: 'Stolzl';
+    font-size: 34px;
+    font-weight: 400;
+    color: #1f3262;
+    text-transform: uppercase; }
+  .card-exchange__currency-rate {
+    font-family: 'Stolzl';
+    font-size: 23px;
+    font-weight: 400;
+    color: #31aa1d; }
+  .card-exchange__currency-term {
+    font-family: 'Stolzl';
+    font-size: 23px;
+    font-weight: 400;
+    color: #a8b5d6; }
+  .card-exchange__middle-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .card-exchange__middle-title {
+    margin-top: 53px;
+    margin-bottom: 0;
+    font-family: 'Stolzl Book';
+    font-size: 17px;
+    font-weight: 400;
+    color: #1f3262;
+    opacity: 0.5;
+    text-align: center; }
+  .card-exchange__middle-rate {
+    margin-top: 19px;
+    font-family: 'Stolzl';
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #1f3262; }
+  .card-exchange__bottom-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .card-exchange__bottom-title {
+    margin-top: 72px;
+    margin-bottom: 0;
+    font-family: "Stolzl Book";
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0.5;
+    color: #1f3262;
+    text-align: center; }
+  .card-exchange__bottom-days-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .card-exchange__bottom-days {
+    margin-top: 19px;
+    font-family: 'Stolzl';
+    font-size: 34px;
+    font-weight: 400;
+    color: #1f3262; }
+
+.buttons-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: transparent;
+  margin-bottom: 77px;
+  margin-left: 77px; }
+  .buttons-section__button {
+    border: 0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-family: 'Stolzl Book';
+    font-weight: 400;
+    font-size: 21px;
+    color: #1f3262;
+    padding-top: 30px;
+    padding-bottom: 32px;
+    margin-top: 45px;
+    margin-right: 41px;
+    position: relative; }
+    .buttons-section__button:hover {
+      cursor: pointer; }
+    .buttons-section__button--trader {
+      padding-left: 97px;
+      padding-right: 42px; }
+    .buttons-section__button--top {
+      padding-left: 150px;
+      padding-right: 88px;
+      text-transform: uppercase; }
+      .buttons-section__button--top .buttons-section__icon {
+        left: 78px; }
+    .buttons-section__button--charge {
+      padding-left: 100px;
+      padding-right: 46px; }
+    .buttons-section__button--subscribe {
+      padding-left: 119px;
+      padding-right: 55px; }
+    .buttons-section__button--withdraw {
+      padding-left: 99px;
+      padding-right: 37px; }
+    .buttons-section__button--active {
+      background-color: #5067f3;
+      color: #ffffff; }
+  .buttons-section__icon {
+    display: block;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    fill: #1f3262; }
+    .buttons-section__icon--active {
+      fill: #ffffff; }
+
+.wallet-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: transparent;
+  max-width: 1900px;
+  margin-left: 75px;
+  margin-right: auto; }
+
+.wallet-block--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.wallet-block__title {
+  font-family: 'Stolzl';
+  font-size: 21px;
+  font-weight: 400;
+  color: #1f3262; }
+
+.wallet-block__wallet-key {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 34px;
+  margin-right: 34px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 31px;
+  font-family: 'Stolzl';
+  font-size: 19px;
+  color: #223464;
+  background-color: #f6f8fa;
+  border: 0;
+  width: 515px; }
+
+.wallet-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: -10px 15px 31px 4px rgba(25, 28, 31, 0.03);
+  box-shadow: -10px 15px 31px 4px rgba(25, 28, 31, 0.03);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: 'Stolzl'; }
+  .wallet-card--address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right: 75px; }
+  .wallet-card__currency-block {
+    margin-top: 40px;
+    margin-bottom: 39px;
+    margin-left: 43px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .wallet-card__wrapper-update {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .wallet-card__update {
+    margin-left: 34px;
+    margin-right: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 29px;
+    padding-right: 26px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+    background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%);
+    color: #ffffff;
+    font-family: 'Stolzl';
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px; }
+    .wallet-card__update:hover {
+      cursor: pointer; }
+  .wallet-card__rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 34px;
+    font-weight: 700;
+    color: #1f3262;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 34px;
+    -ms-flex-preferred-size: 10%;
+    flex-basis: 10%; }
+  .wallet-card__currency-title-block {
+    margin-left: 34px; }
+  .wallet-card__currency-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #1f3262; }
+  .wallet-card__currency-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 23px;
+    font-weight: 400;
+    color: #a8b5d6; }
+  .wallet-card__currency-icon {
+    width: 84px;
+    height: 84px;
+    background-image: url("../icons/bitcoin-icon.jpg"); }
+
+@media (max-width: 1630px) {
+  .wallet-block__wallet-key {
+    width: 561px; } }
+
+.history-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: transparent;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 1900px;
+  margin-top: 82px;
+  margin-left: 75px;
+  margin-right: auto; }
+  .history-block__content-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    grid-template-columns: minmax(100px, 1400px); }
+  .history-block__title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Stolzl';
+    font-size: 21px;
+    font-weight: 400;
+    color: #1f3262; }
+  .history-block__table {
+    font-family: 'Stolzl';
+    width: 100%;
+    border-spacing: 0px 14px; }
+  .history-block__table-column-name {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-family: 400;
+    text-align: center; }
+    .history-block__table-column-name:first-child {
+      border-radius: 5px 0px 0px 5px; }
+    .history-block__table-column-name:last-child {
+      border-radius: 0px 5px 5px 0px; }
+  .history-block__row--title {
+    font-size: 15px;
+    color: #ffffff;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#354e88), to(#192249));
+    background-image: -webkit-linear-gradient(bottom, #354e88 0%, #192249 100%);
+    background-image: -o-linear-gradient(bottom, #354e88 0%, #192249 100%);
+    background-image: linear-gradient(to top, #354e88 0%, #192249 100%); }
+  .history-block__table-row {
+    background-color: #ffffff; }
+  .history-block__table-cell {
+    font-family: "Stolzl Book";
+    font-size: 13px;
+    color: #223464;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    text-align: center; }
+    .history-block__table-cell:first-child {
+      border-radius: 5px 0px 0px 5px; }
+    .history-block__table-cell:last-child {
+      border-radius: 0px 5px 5px 0px; }
+    .history-block__table-cell--time {
+      width: 20%; }
+    .history-block__table-cell--hash {
+      width: 60%; }
+    .history-block__table-cell--date {
+      width: 20%; }
+
+.card-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: transparent;
+  margin-top: 93px;
+  margin-left: 77px; }
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 322px;
+  margin-right: 38px;
+  margin-top: 27px; }
+  .card__avatar {
+    width: 98px;
+    height: 98px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    font-family: 'Stolzl';
+    margin-top: 27px; }
+  .card__name {
+    font-family: 'Stolzl';
+    font-size: 21px;
+    font-weight: 400;
+    color: #1f3262;
+    margin-top: 24px; }
+  .card__more {
+    margin-top: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-family: 'Stolzl Book';
+    font-size: 15px;
+    font-weight: 400;
+    color: #1f3262; }
+    .card__more:hover {
+      cursor: pointer; }
+    .card__more:active {
+      color: #ffffff;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+      background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+      background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+      background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%); }
+  .card__income {
+    width: 75%;
+    margin-top: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .card__income-text, .card__rating-text, .card__followers-text {
+    font-family: "Stolzl Book";
+    font-size: 14px;
+    font-weight: 400;
+    color: #1f3262;
+    opacity: 0.5; }
+  .card__income-rate {
+    font-family: 'Stolzl';
+    font-size: 28px;
+    font-weight: 400;
+    color: #31aa1d; }
+  .card__income-term {
+    font-family: 'Stolzl';
+    font-size: 11px;
+    font-weight: 400;
+    color: #1f3262; }
+  .card__status {
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 22px; }
+  .card__rating-text, .card__followers-text {
+    text-transform: uppercase; }
+  .card__rating-number, .card__followers-number {
+    font-family: 'Stolzl';
+    font-size: 28px;
+    font-weight: 400;
+    color: #1f3262; }
+  .card__followers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .card__available-wrapper {
+    margin-top: 25px;
+    margin-bottom: 29px;
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#354e88), to(#192249));
+    background-image: -webkit-linear-gradient(bottom, #354e88 0%, #192249 100%);
+    background-image: -o-linear-gradient(bottom, #354e88 0%, #192249 100%);
+    background-image: linear-gradient(to top, #354e88 0%, #192249 100%);
+    border-radius: 5px; }
+  .card__available {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Stolzl Book";
+    color: #ffffff; }
+    .card__available--top, .card__available--bottom {
+      margin-top: 20px; }
+    .card__available--bottom {
+      margin-bottom: 17px; }
+  .card__bar-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .card__bar {
+    display: block;
+    width: 80%;
+    height: 8px;
+    margin-top: 11px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    position: relative; }
+  .card__bar-progress {
+    display: block;
+    width: 40%;
+    height: 8px;
+    background-color: #5d77f6;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+a {
+  text-decoration: none; }
+
+button {
+  border: 0; }
+
+.subscription .stoploss__display_values .procent.font {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  font-size: 33px;
+  color: #7d8cf1; }
+
+.range_item {
+  width: 100% !important; }
+
+.range_progress {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  z-index: 0; }
+
+.balance_copytrading .range_progress {
+  background-color: #1f3262; }
+
+.stoploss .range_progress {
+  background-color: #7d8cf1; }
+
+.conclusion .range_progress {
+  top: 31px;
+  background-color: #7d8cf1; }
+
+.title {
+  display: block;
+  color: #1f3262;
+  font-family: 'Stolzl';
+  font-size: 21px;
+  margin-bottom: 50px !important; }
+
+.main_content_wraper {
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.content_inner_block {
+  border-radius: 10px;
+  padding: 40px 0;
+  color: #a8b5d6;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Stolzl'; }
+
+.button_initial {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Stolzl Book";
+  font-size: 17px;
+  border-radius: 5px;
+  width: 240px;
+  height: 64px; }
+
+.button_regular {
+  background-color: #c3d0ea;
+  color: #1f3262;
+  font-weight: 700; }
+
+.button_active {
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+  background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+  background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+  background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%); }
+
+.container_nav-panel {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto; }
+  .container_nav-panel__title {
+    font-family: 'Stolzl';
+    font-size: 21px;
+    position: absolute;
+    top: -80px;
+    color: #1f3262;
+    font-family: 'Stolzl';
+    font-size: 21px;
+    font-weight: 700;
+    font-weight: 100;
+    text-align: left; }
+  .container_nav-panel__steps .description {
+    font-family: 'Stolzl';
+    font-size: 21px;
+    text-align: center;
+    color: #1f3262; }
+  .container_nav-panel__card_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .container_nav-panel__card_block .card_item {
+      position: relative;
+      color: #fff;
+      border-radius: 10px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0 0 20px 20px;
+      max-width: 645px;
+      height: 385px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      background-color: #804eee; }
+      .container_nav-panel__card_block .card_item__title {
+        font-size: 51px;
+        font-family: 'Stolzl';
+        padding: 0;
+        margin: 0; }
+      .container_nav-panel__card_block .card_item__description {
+        width: 65%;
+        font-family: 'Stolzl Book';
+        font-size: 25px;
+        z-index: 10; }
+      .container_nav-panel__card_block .card_item__button {
+        font-size: 18px;
+        font-family: 'Stolzl';
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        width: 55%;
+        height: 64px;
+        background-color: #fff;
+        border: 0;
+        border-radius: 5px;
+        outline: 0;
+        cursor: pointer; }
+        .container_nav-panel__card_block .card_item__button:hover {
+          background-color: #4457d9;
+          color: #fff; }
+        .container_nav-panel__card_block .card_item__button--disabled {
+          cursor: default;
+          opacity: .5; }
+      .container_nav-panel__card_block .card_item:nth-child(1) {
+        background-image: url(".images/card_bg1.svg");
+        background-position: right bottom;
+        background-size: 50%;
+        background-repeat: no-repeat; }
+      .container_nav-panel__card_block .card_item .svg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        stroke: #6a46b7; }
+      .container_nav-panel__card_block .card_item:nth-child(2) {
+        background-position: right bottom;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-image: url(".images/Drawing.svg"); }
+
+.account_report {
+  margin: 0 auto;
+  position: relative;
+  width: inherit;
+  height: 482px;
+  border-radius: 10px;
+  background-color: #4c61f2;
+  background-image: url(".images/assets_bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom; }
+  .account_report__wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: inherit; }
+  .account_report__title {
+    color: #1f3262;
+    /*@include block_titles;*/
+    font-family: 'Stolzl';
+    font-size: 21px;
+    line-height: 48.01px; }
+  .account_report__container_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    margin-left: 76px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .account_report__button {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    cursor: pointer;
+    margin-bottom: 21px;
+    max-width: 553px;
+    height: 98px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-family: 'Stolzl';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 41.45px;
+    /*&.active{
+			background-image: linear-gradient(to top, #22386b 0%, #192249 100%);
+		}*/ }
+    .account_report__button:hover {
+      background-color: #22386b; }
+  .account_report__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 76px; }
+    .account_report__info .period {
+      text-align: center;
+      opacity: 0.45;
+      color: #ffffff;
+      font-family: "Stolzl Book";
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 41.45px; }
+      .account_report__info .period a {
+        margin-right: 10px;
+        color: #fff; }
+    .account_report__info .cash {
+      color: #ffffff;
+      font-family: 'Stolzl';
+      font-size: 77px;
+      font-weight: 400;
+      line-height: 134.06px; }
+    .account_report__info .btc {
+      position: relative;
+      top: -90px;
+      color: #ffffff;
+      font-size: 31px;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: "Stolzl Book";
+      font-size: 22px;
+      font-weight: 300;
+      font-weight: 400; }
+    .account_report__info .stock_exchanges {
+      width: inherit; }
+      .account_report__info .stock_exchanges__button {
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        cursor: pointer;
+        width: 172px;
+        height: 51px;
+        border-radius: 5px;
+        background-color: #5c6dea;
+        color: #ffffff;
+        font-family: 'Stolzl';
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 49.45px;
+        margin-right: 10px;
+        /*&.active{
+					background-color: #ffffff;
+					color: #000;
+				}*/ }
+        .account_report__info .stock_exchanges__button:hover {
+          background-color: #ffffff;
+          color: #000; }
+
+.my_trader {
+  font-family: Stolzl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  height: 482px;
+  max-width: 1397px;
+  background-image: url(".images/mytrader_bg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  .my_trader__hazard {
+    font-family: Stolzl Book;
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: 300px;
+    height: 85px;
+    border-radius: 50px 0px 0px 50px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#c10513)), -webkit-gradient(linear, left bottom, left top, from(#000000), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #ff0000 0%, #c10513 100%), -webkit-linear-gradient(bottom, #000000 0%, #ffffff 100%);
+    background-image: -o-linear-gradient(top, #ff0000 0%, #c10513 100%), -o-linear-gradient(bottom, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, #ff0000 0%, #c10513 100%), linear-gradient(to top, #000000 0%, #ffffff 100%); }
+    .my_trader__hazard::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 10;
+      width: 56px;
+      height: 44px;
+      top: 0;
+      left: 0;
+      background-image: url(".images/risk2.svg"); }
+    .my_trader__hazard__message {
+      padding-top: 10px;
+      font-family: Stolzl;
+      height: inherit;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .my_trader__hazard__range {
+      font-size: 20px;
+      line-height: 68.05px; }
+    .my_trader__hazard__icon {
+      width: 40px;
+      height: 0px;
+      position: absolute;
+      left: 25px;
+      top: 19px; }
+  .my_trader .logo_wraper {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .my_trader__trader-logo {
+    position: relative;
+    left: -50px;
+    height: 100%;
+    max-width: 400px; }
+  .my_trader__wraper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px;
+    height: inherit;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .my_trader__subwrap {
+    height: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 70%; }
+  .my_trader__trader_name {
+    color: #1f3262;
+    font-family: 'Stolzl';
+    font-size: 42px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 70.46px; }
+  .my_trader__trader-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .my_trader__trader-info .top::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: -156%;
+      top: 15px;
+      background-color: #c3d0ea;
+      width: 1px;
+      height: 50px; }
+    .my_trader__trader-info .top::after {
+      content: '';
+      top: 15px;
+      position: absolute;
+      right: -156%;
+      display: block;
+      background-color: #c3d0ea;
+      width: 1px;
+      height: 50px; }
+    .my_trader__trader-info .item {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .my_trader__trader-info .item .profit__value, .my_trader__trader-info .item .top__value, .my_trader__trader-info .item .subscribers__value {
+        font-family: 'Stolzl Book';
+        font-size: 55px; }
+      .my_trader__trader-info .item .profit__description, .my_trader__trader-info .item .top__description, .my_trader__trader-info .item .subscribers__description {
+        -ms-flex-item-align: center;
+        align-self: center; }
+  .my_trader .profit__value {
+    color: #31aa1d;
+    font-size: 55px;
+    font-weight: 400;
+    color: #29ac02; }
+  .my_trader .profit__term {
+    color: #1f3262;
+    font-size: 21px; }
+  .my_trader__trader-info__item {
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .my_trader__bottom-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .my_trader__bottom-side .subscription_term {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .my_trader__bottom-side .subscription_term__fin_term {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 91.44px; }
+      .my_trader__bottom-side .subscription_term__description {
+        font-family: "Stolzl Book";
+        font-size: 17px;
+        font-weight: 400; }
+  .my_trader__bottom-button {
+    color: #ffffff;
+    font-family: "Stolzl Book";
+    font-size: 17px;
+    width: 240px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #f6f8fa;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+    background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%); }
+
+.overflow_container {
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: transparent; }
+
+.range_item {
+  -webkit-appearance: none;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 12px auto;
+  border-radius: 20px; }
+
+.range_item:focus {
+  outline: none; }
+
+.range_item::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d;
+  border-radius: 21.3px;
+  border: 0px solid #010101; }
+
+.range_item::-webkit-slider-thumb {
+  -webkit-box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  border: 5.7px solid #1f3262;
+  height: 36px;
+  width: 36px;
+  border-radius: 27px;
+  background: #f2ffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12px; }
+
+.range_item:focus::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.78); }
+
+.range_item::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d;
+  border-radius: 21.3px;
+  border: 0px solid #010101; }
+
+.range_item::-moz-range-thumb {
+  box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  border: 5.7px solid #1f3262;
+  height: 36px;
+  width: 36px;
+  border-radius: 27px;
+  background: #f2ffff;
+  cursor: pointer; }
+
+.range_item::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+.range_item::-ms-fill-lower {
+  border: 0px solid #010101;
+  border-radius: 42.6px;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d; }
+
+.range_item::-ms-fill-upper {
+  border: 0px solid #010101;
+  border-radius: 42.6px;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d; }
+
+.range_item::-ms-thumb {
+  box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  border: 5.7px solid #1f3262;
+  height: 36px;
+  width: 36px;
+  border-radius: 27px;
+  background: #f2ffff;
+  cursor: pointer;
+  height: 12px; }
+
+.range_item:focus::-ms-fill-lower {
+  background: rgba(255, 255, 255, 0.78); }
+
+.range_item:focus::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.78); }
+
+.range_dim::-ms-fill-lower {
+  background-color: #add8e6;
+  box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-webkit-slider-runnable-track {
+  background-color: #add8e6;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-moz-range-track {
+  background-color: #add8e6;
+  box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-webkit-slider-thumb {
+  background-color: #7d8cf1;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0; }
+
+.range_dim::-moz-range-thumb {
+  background-color: #7d8cf1;
+  box-shadow: none;
+  border: 0; }
+
+.range_dim::-ms-thumb {
+  background-color: #7d8cf1;
+  box-shadow: none;
+  border: 0; }
+
+.range_dim::-webkit-slider-runnable-track {
+  background-color: #add8e6;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.range_dim:focus::-webkit-slider-runnable-track {
+  background-color: #add8e6;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-ms-fill-lower {
+  background-color: #add8e6;
+  box-shadow: none; }
+
+.rande_bright::-ms-fill-lower {
+  background-color: #fff;
+  box-shadow: none; }
+
+.rande_bright::-webkit-slider-runnable-track {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.rande_bright::-moz-range-track {
+  background-color: #fff;
+  box-shadow: none; }
+
+.subscription {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Stolzl';
+  color: #fff;
+  max-width: 1400px;
+  margin: 0 auto; }
+  .subscription__title {
+    text-align-last: left;
+    margin-bottom: 55px;
+    font-weight: 100;
+    text-transform: uppercase; }
+  .subscription__trader_name {
+    font-weight: 900; }
+  .subscription .stoploss, .subscription .subscribe_cost {
+    height: 30.6%; }
+  .subscription .wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 48%;
+    height: inherit; }
+  .subscription .balance_copytrading {
+    width: 50%;
+    color: #fff;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+    background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%);
+    padding: 40px 0; }
+    .subscription .balance_copytrading__title {
+      display: block;
+      max-width: 50%;
+      margin: 0 auto;
+      font-size: 23px;
+      margin-bottom: 40px; }
+    .subscription .balance_copytrading__info {
+      font-size: 28px; }
+    .subscription .balance_copytrading__value {
+      font-size: 63px;
+      line-height: 100px; }
+    .subscription .balance_copytrading__currency {
+      font-family: 'Stolzl Book';
+      display: block;
+      margin-bottom: 84px; }
+  .subscription .subscribe_cost {
+    border-radius: 10px;
+    padding: 40px 0;
+    color: #a8b5d6;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Stolzl';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .subscription .subscribe_cost__title {
+      font-size: 23px; }
+    .subscription .subscribe_cost__cost {
+      line-height: 90px;
+      font-size: 36px;
+      color: #1f3262; }
+    .subscription .subscribe_cost__comission {
+      font-family: "Stolzl Book";
+      font-size: 18px; }
+  .subscription .stoploss {
+    border-radius: 10px;
+    background-color: #fff;
+    padding-top: 44px;
+    color: #a8b5d6; }
+    .subscription .stoploss__title {
+      font-size: 23px; }
+    .subscription .stoploss__display_values {
+      margin: 23px auto;
+      -ms-flex-item-align: center;
+      align-self: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 93%;
+      font-family: "Stolzl Book";
+      color: #1f3262;
+      font-weight: 700; }
+      .subscription .stoploss__display_values .procent {
+        font-size: 18px;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        height: 63px; }
+    .subscription .stoploss #stoploss__range {
+      margin-bottom: 50px; }
+  .subscription .transfer_date {
+    margin-top: 18px;
+    position: relative;
+    width: 99%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .subscription .transfer_date__description {
+      -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+      font-size: 23px; }
+    .subscription .transfer_date__button {
+      width: 28%;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+      .subscription .transfer_date__button:hover {
+        background-color: #4c61f2;
+        /*background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%);*/ }
+    .subscription .transfer_date__buttons_kit {
+      width: 51%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .subscription .transfer_date__produce_subscribe {
+      position: absolute;
+      width: 300px;
+      top: 170px;
+      -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+.withdraw .card_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.withdraw .adress {
+  width: 100%; }
+  .withdraw .adress__input_container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .withdraw .adress__input {
+    margin-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 80%;
+    font-size: 28px;
+    border-radius: 5px;
+    -webkit-box-shadow: -10px 15px 31px 4px rgba(25, 28, 31, 0.03);
+    box-shadow: -10px 15px 31px 4px rgba(25, 28, 31, 0.03); }
+
+.withdraw .balance_outcontrol {
+  width: 50%; }
+  .withdraw .balance_outcontrol__title-block {
+    color: #1f3262;
+    /*font-family: Stolzl;*/
+    font-size: 34px;
+    text-transform: uppercase; }
+  .withdraw .balance_outcontrol__icon {
+    width: 84px;
+    height: 84px;
+    background-color: red; }
+  .withdraw .balance_outcontrol__block {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .withdraw .balance_outcontrol__card {
+    padding-right: 20px;
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .withdraw .balance_outcontrol__title-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .withdraw .balance_outcontrol__sub_title {
+    font-size: 34px;
+    padding: 0;
+    margin: 0; }
+  .withdraw .balance_outcontrol__description {
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+    color: #a8b5d6; }
+  .withdraw .balance_outcontrol__rate {
+    color: #1f3262;
+    line-height: 105px;
+    font-size: 34px; }
+
+.withdraw .conclusion {
+  width: 50%;
+  position: relative; }
+  .withdraw .conclusion__range {
+    width: 100%;
+    margin-top: 32px;
+    bottom: -20px; }
+  .withdraw .conclusion__range_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .withdraw .conclusion__range_container .overflow_container {
+      width: 60%; }
+  .withdraw .conclusion__rate {
+    width: 60%;
+    position: relative;
+    left: 10%; }
+  .withdraw .conclusion__rate_item {
+    font-size: 34px;
+    margin-right: 20px;
+    color: #1f3262; }
+  .withdraw .conclusion__button {
+    margin-right: 25px;
+    max-width: 24%; }
+
+@media (max-width: 1500px) {
+  .container_nav-panel .container_nav-panel__card_block .card_item {
+    width: 450px;
+    height: 260px; }
+  .container_nav-panel .container_nav-panel__card_block .card_item h3 {
+    font-size: 30px; }
+  .container_nav-panel .container_nav-panel__card_block .card_item__description {
+    font-size: 20px; }
+  .account_report .account_report__info .stock_exchanges__button {
+    width: 140px; } }
+
+@media (max-width: 1100px) {
+  .account_report .account_report__info {
+    margin-right: 10px; } }
+
+a {
+  text-decoration: none; }
+
+body {
+  background-color: #e6adad; }
+
+button {
+  border: 0; }
+
+.title {
+  display: block;
+  color: #1f3262;
+  font-family: 'Stolzl';
+  font-size: 21px;
+  margin-bottom: 50px !important; }
+
+.main_content_wraper {
+  max-width: 1400px;
+  margin-top: 55px;
+  margin-left: 75px;
+  margin-right: auto; }
+
+.content_inner_block {
+  border-radius: 10px;
+  padding: 40px 0;
+  color: #a8b5d6;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Stolzl'; }
+
+.button_initial {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Stolzl Book";
+  font-size: 17px;
+  border-radius: 5px;
+  width: 240px;
+  height: 64px;
+  line-height: 0px; }
+
+.button_regular {
+  background-color: #c3d0ea;
+  color: #1f3262;
+  font-weight: 700; }
+
+.button_active {
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+  background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+  background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+  background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%); }
+
+.container_nav-panel {
+  position: relative;
+  max-width: 1400px;
+  margin-left: 75px;
+  margin-right: 75px; }
+  .container_nav-panel__title {
+    font-family: 'Stolzl';
+    font-size: 21px;
+    color: #1f3262;
+    font-weight: 100;
+    text-align: left; }
+  .container_nav-panel__steps .description {
+    font-family: 'Stolzl';
+    font-size: 21px;
+    text-align: center;
+    color: #1f3262; }
+  .container_nav-panel__card_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .container_nav-panel__card_block .card_item {
+      margin-top: 10px;
+      position: relative;
+      color: #fff;
+      border-radius: 10px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0 0 20px 20px;
+      max-width: 645px;
+      height: 385px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      background-color: #804eee; }
+      .container_nav-panel__card_block .card_item__title {
+        font-size: 51px;
+        font-family: 'Stolzl';
+        padding: 0;
+        margin: 0; }
+      .container_nav-panel__card_block .card_item__description {
+        width: 65%;
+        font-family: 'Stolzl Book';
+        font-size: 25px;
+        z-index: 10; }
+      .container_nav-panel__card_block .card_item__button {
+        font-size: 18px;
+        font-family: 'Stolzl';
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        width: 55%;
+        height: 64px;
+        background-color: #fff;
+        border: 0;
+        border-radius: 5px;
+        outline: 0;
+        cursor: pointer; }
+        .container_nav-panel__card_block .card_item__button:hover {
+          background-color: #4457d9;
+          color: #fff; }
+        .container_nav-panel__card_block .card_item__button--disabled {
+          cursor: default;
+          opacity: .5; }
+      .container_nav-panel__card_block .card_item:nth-child(1) {
+        background-image: url(".images/card_bg1.svg");
+        background-position: right bottom;
+        background-size: 50%;
+        background-repeat: no-repeat; }
+      .container_nav-panel__card_block .card_item .svg {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        stroke: #6a46b7; }
+      .container_nav-panel__card_block .card_item:nth-child(2) {
+        background-position: right bottom;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-image: url(".images/Drawing.svg"); }
+
+.account_report {
+  position: relative;
+  width: inherit;
+  height: 482px;
+  border-radius: 10px;
+  background-color: #4c61f2;
+  background-image: url(".images/assets_bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom; }
+  .account_report__wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: inherit;
+    margin-top: 0; }
+  .account_report__title {
+    color: #1f3262;
+    position: static;
+    /*@include block_titles;*/
+    font-family: 'Stolzl';
+    font-size: 21px;
+    line-height: 48.01px; }
+  .account_report__container_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    margin-left: 76px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .account_report__button {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    cursor: pointer;
+    margin-bottom: 21px;
+    max-width: 553px;
+    height: 98px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-family: 'Stolzl';
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 41.45px;
+    /*&.active{
+			background-image: linear-gradient(to top, #22386b 0%, #192249 100%);
+		}*/ }
+    .account_report__button:hover {
+      background-color: #22386b; }
+  .account_report__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 76px; }
+    .account_report__info .period {
+      text-align: center;
+      opacity: 0.45;
+      color: #ffffff;
+      font-family: "Stolzl Book";
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 41.45px; }
+      .account_report__info .period a {
+        margin-right: 10px;
+        color: #fff; }
+    .account_report__info .cash {
+      color: #ffffff;
+      font-family: 'Stolzl';
+      font-size: 77px;
+      font-weight: 400;
+      line-height: 134.06px; }
+    .account_report__info .btc {
+      position: relative;
+      top: -90px;
+      color: #ffffff;
+      font-size: 31px;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: "Stolzl Book";
+      font-size: 22px;
+      font-weight: 300;
+      font-weight: 400; }
+    .account_report__info .stock_exchanges {
+      width: inherit; }
+      .account_report__info .stock_exchanges__button {
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        cursor: pointer;
+        width: 172px;
+        height: 51px;
+        border-radius: 5px;
+        background-color: #5c6dea;
+        color: #ffffff;
+        font-family: 'Stolzl';
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 49.45px;
+        margin-right: 10px;
+        /*&.active{
+					background-color: #ffffff;
+					color: #000;
+				}*/ }
+        .account_report__info .stock_exchanges__button:hover {
+          background-color: #ffffff;
+          color: #000; }
+
+.my_trader {
+  font-family: Stolzl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  height: 482px;
+  max-width: 1397px;
+  background-image: url(".images/mytrader_bg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  .my_trader__hazard {
+    font-family: Stolzl Book;
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: 300px;
+    height: 85px;
+    border-radius: 50px 0px 0px 50px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#c10513)), -webkit-gradient(linear, left bottom, left top, from(#000000), to(#ffffff));
+    background-image: -webkit-linear-gradient(top, #ff0000 0%, #c10513 100%), -webkit-linear-gradient(bottom, #000000 0%, #ffffff 100%);
+    background-image: -o-linear-gradient(top, #ff0000 0%, #c10513 100%), -o-linear-gradient(bottom, #000000 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, #ff0000 0%, #c10513 100%), linear-gradient(to top, #000000 0%, #ffffff 100%); }
+    .my_trader__hazard::before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 10;
+      width: 56px;
+      height: 44px;
+      top: 0;
+      left: 0;
+      background-image: url(".images/risk2.svg"); }
+    .my_trader__hazard__message {
+      padding-top: 10px;
+      font-family: Stolzl;
+      height: inherit;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .my_trader__hazard__range {
+      font-size: 20px;
+      line-height: 68.05px; }
+    .my_trader__hazard__icon {
+      width: 40px;
+      height: 0px;
+      position: absolute;
+      left: 25px;
+      top: 19px; }
+  .my_trader .logo_wraper {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .my_trader__trader-logo {
+    position: relative;
+    left: -50px;
+    height: 100%;
+    max-width: 400px; }
+  .my_trader__wraper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px;
+    height: inherit;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .my_trader__subwrap {
+    height: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 70%; }
+  .my_trader__trader_name {
+    color: #1f3262;
+    font-family: 'Stolzl';
+    font-size: 42px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 70.46px; }
+  .my_trader__trader-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .my_trader__trader-info .top::before {
+      content: '';
+      position: absolute;
+      display: block;
+      left: -156%;
+      top: 15px;
+      background-color: #c3d0ea;
+      width: 1px;
+      height: 50px; }
+    .my_trader__trader-info .top::after {
+      content: '';
+      top: 15px;
+      position: absolute;
+      right: -156%;
+      display: block;
+      background-color: #c3d0ea;
+      width: 1px;
+      height: 50px; }
+    .my_trader__trader-info .item {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .my_trader__trader-info .item .profit__value, .my_trader__trader-info .item .top__value, .my_trader__trader-info .item .subscribers__value {
+        font-family: 'Stolzl Book';
+        font-size: 55px; }
+      .my_trader__trader-info .item .profit__description, .my_trader__trader-info .item .top__description, .my_trader__trader-info .item .subscribers__description {
+        -ms-flex-item-align: center;
+        align-self: center; }
+  .my_trader .profit__value {
+    color: #31aa1d;
+    font-size: 55px;
+    font-weight: 400;
+    color: #29ac02; }
+  .my_trader .profit__term {
+    color: #1f3262;
+    font-size: 21px; }
+  .my_trader__trader-info__item {
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .my_trader__bottom-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .my_trader__bottom-side .subscription_term {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .my_trader__bottom-side .subscription_term__fin_term {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 91.44px; }
+      .my_trader__bottom-side .subscription_term__description {
+        font-family: "Stolzl Book";
+        font-size: 17px;
+        font-weight: 400; }
+  .my_trader__bottom-button {
+    color: #ffffff;
+    font-family: "Stolzl Book";
+    font-size: 17px;
+    width: 240px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #f6f8fa;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+    background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%); }
+
+.overflow_container {
+  overflow: hidden;
+  width: 100%;
+  background-color: transparent; }
+
+.range_item {
+  -webkit-appearance: none;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 12px auto;
+  border-radius: 20px; }
+
+.range_item:focus {
+  outline: none; }
+
+.range_item::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d;
+  border-radius: 21.3px;
+  border: 0px solid #010101; }
+
+.range_item::-webkit-slider-thumb {
+  -webkit-box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  border: 5.7px solid #1f3262;
+  height: 36px;
+  width: 36px;
+  border-radius: 27px;
+  background: #f2ffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12px; }
+
+.range_item:focus::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.78); }
+
+.range_item::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d;
+  border-radius: 21.3px;
+  border: 0px solid #010101; }
+
+.range_item::-moz-range-thumb {
+  box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  border: 5.7px solid #1f3262;
+  height: 36px;
+  width: 36px;
+  border-radius: 27px;
+  background: #f2ffff;
+  cursor: pointer; }
+
+.range_item::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+.range_item::-ms-fill-lower {
+  border: 0px solid #010101;
+  border-radius: 42.6px;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d; }
+
+.range_item::-ms-fill-upper {
+  border: 0px solid #010101;
+  border-radius: 42.6px;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d; }
+
+.range_item::-ms-thumb {
+  box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  border: 5.7px solid #1f3262;
+  height: 36px;
+  width: 36px;
+  border-radius: 27px;
+  background: #f2ffff;
+  cursor: pointer;
+  height: 12px; }
+
+.range_item:focus::-ms-fill-lower {
+  background: rgba(255, 255, 255, 0.78); }
+
+.range_item:focus::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.78); }
+
+.range_dim::-ms-fill-lower {
+  background-color: #add8e6;
+  box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-webkit-slider-runnable-track {
+  background-color: #add8e6;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-moz-range-track {
+  background-color: #add8e6;
+  box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-webkit-slider-thumb {
+  background-color: #7d8cf1;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0; }
+
+.range_dim::-moz-range-thumb {
+  background-color: #7d8cf1;
+  box-shadow: none;
+  border: 0; }
+
+.range_dim::-ms-thumb {
+  background-color: #7d8cf1;
+  box-shadow: none;
+  border: 0; }
+
+.range_dim::-webkit-slider-runnable-track {
+  background-color: #add8e6;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.range_dim:focus::-webkit-slider-runnable-track {
+  background-color: #add8e6;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-ms-fill-lower {
+  background-color: #add8e6;
+  box-shadow: none; }
+
+.rande_bright::-ms-fill-lower {
+  background-color: #fff;
+  box-shadow: none; }
+
+.rande_bright::-webkit-slider-runnable-track {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.rande_bright::-moz-range-track {
+  background-color: #fff;
+  box-shadow: none; }
+
+.subscription {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Stolzl';
+  color: #fff;
+  max-width: 1400px;
+  margin: 0 auto; }
+  .subscription__title {
+    text-align-last: left;
+    margin-bottom: 55px;
+    font-weight: 100;
+    text-transform: uppercase; }
+  .subscription__trader_name {
+    font-weight: 900; }
+  .subscription .stoploss, .subscription .subscribe_cost {
+    height: 30.6%; }
+  .subscription .wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 48%;
+    height: inherit; }
+  .subscription .balance_copytrading {
+    width: 50%;
+    color: #fff;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4c61f2), to(#7192fb));
+    background-image: -webkit-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: -o-linear-gradient(top, #4c61f2 0%, #7192fb 100%);
+    background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%);
+    padding: 40px 0; }
+    .subscription .balance_copytrading__title {
+      display: block;
+      max-width: 50%;
+      margin: 0 auto;
+      font-size: 23px;
+      margin-bottom: 40px; }
+    .subscription .balance_copytrading__info {
+      font-size: 28px; }
+    .subscription .balance_copytrading__value {
+      font-size: 63px;
+      line-height: 100px; }
+    .subscription .balance_copytrading__currency {
+      font-family: 'Stolzl Book';
+      display: block;
+      margin-bottom: 84px; }
+  .subscription .subscribe_cost {
+    border-radius: 10px;
+    padding: 40px 0;
+    color: #a8b5d6;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Stolzl';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .subscription .subscribe_cost__title {
+      font-size: 23px; }
+    .subscription .subscribe_cost__cost {
+      line-height: 90px;
+      font-size: 36px;
+      color: #1f3262; }
+    .subscription .subscribe_cost__comission {
+      font-family: "Stolzl Book";
+      font-size: 18px; }
+  .subscription .stoploss {
+    border-radius: 10px;
+    background-color: #fff;
+    padding-top: 44px;
+    color: #a8b5d6; }
+    .subscription .stoploss__title {
+      font-size: 23px; }
+    .subscription .stoploss__display_values {
+      margin: 23px auto;
+      -ms-flex-item-align: center;
+      align-self: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 93%;
+      font-family: "Stolzl Book";
+      color: #1f3262;
+      font-weight: 700; }
+    .subscription .stoploss #stoploss__range {
+      margin-bottom: 50px; }
+  .subscription .transfer_date {
+    margin-top: 18px;
+    position: relative;
+    width: 99%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .subscription .transfer_date__description {
+      -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+      font-size: 23px; }
+    .subscription .transfer_date__button {
+      width: 28%;
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+      .subscription .transfer_date__button:hover {
+        background-color: #4c61f2;
+        /*background-image: linear-gradient(to bottom, #4c61f2 0%, #7192fb 100%);*/ }
+    .subscription .transfer_date__buttons_kit {
+      width: 51%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .subscription .transfer_date__produce_subscribe {
+      position: absolute;
+      width: 300px;
+      top: 170px;
+      -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+@media (max-width: 1500px) {
+  .container_nav-panel .container_nav-panel__card_block .card_item {
+    width: 450px;
+    height: 260px; }
+  .container_nav-panel .container_nav-panel__card_block .card_item h3 {
+    font-size: 30px; }
+  .container_nav-panel .container_nav-panel__card_block .card_item__description {
+    font-size: 20px; }
+  .account_report .account_report__info .stock_exchanges__button {
+    width: 140px; } }
+
+@media (max-width: 1100px) {
+  .account_report .account_report__info {
+    margin-right: 10px; } }
+
+.withdraw .card_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.withdraw .adress {
+  width: 100%; }
+  .withdraw .adress__input_container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .withdraw .adress__input {
+    margin-right: 10px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    width: 80%;
+    border-radius: 5px;
+    -webkit-box-shadow: -10px 15px 31px 4px rgba(25, 28, 31, 0.03);
+    box-shadow: -10px 15px 31px 4px rgba(25, 28, 31, 0.03);
+    border: 0; }
+
+.withdraw .balance_outcontrol {
+  width: 50%; }
+  .withdraw .balance_outcontrol__title {
+    margin-bottom: 35px !important; }
+  .withdraw .balance_outcontrol__title-block {
+    color: #1f3262;
+    font-size: 34px;
+    text-transform: uppercase; }
+  .withdraw .balance_outcontrol__icon {
+    width: 84px;
+    height: 84px;
+    background-image: url("../icons/bitcoin-icon.jpg"); }
+  .withdraw .balance_outcontrol__block {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .withdraw .balance_outcontrol__card {
+    padding-right: 20px;
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .withdraw .balance_outcontrol__title-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .withdraw .balance_outcontrol__sub_title {
+    font-size: 34px;
+    padding: 0;
+    margin: 0; }
+  .withdraw .balance_outcontrol__description {
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+    color: #a8b5d6; }
+  .withdraw .balance_outcontrol__rate {
+    color: #1f3262;
+    line-height: 105px;
+    font-size: 34px; }
+
+.withdraw .conclusion {
+  width: 50%;
+  position: relative; }
+  .withdraw .conclusion__range {
+    width: 60%;
+    bottom: -20px;
+    margin-right: 20px; }
+  .withdraw .conclusion__title {
+    margin-bottom: 35px !important; }
+  .withdraw .conclusion__range_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .withdraw .conclusion__rate {
+    width: 60%;
+    position: relative;
+    left: 10%; }
+  .withdraw .conclusion__rate_item {
+    font-size: 34px;
+    margin-right: 20px;
+    color: #1f3262; }
+  .withdraw .conclusion__button {
+    margin-right: 25px;
+    width: 24%; }
+
+.overflow_container {
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: transparent; }
+
+.range_item {
+  -webkit-appearance: none;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 12px auto;
+  border-radius: 20px; }
+
+.range_item:focus {
+  outline: none; }
+
+.range_item::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d;
+  border-radius: 21.3px;
+  border: 0px solid #010101; }
+
+.range_item::-webkit-slider-thumb {
+  -webkit-box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  border: 5.7px solid #1f3262;
+  height: 36px;
+  width: 36px;
+  border-radius: 27px;
+  background: #f2ffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12px; }
+
+.range_item:focus::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.78); }
+
+.range_item::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d;
+  border-radius: 21.3px;
+  border: 0px solid #010101; }
+
+.range_item::-moz-range-thumb {
+  box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  border: 5.7px solid #1f3262;
+  height: 36px;
+  width: 36px;
+  border-radius: 27px;
+  background: #f2ffff;
+  cursor: pointer; }
+
+.range_item::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+.range_item::-ms-fill-lower {
+  border: 0px solid #010101;
+  border-radius: 42.6px;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d; }
+
+.range_item::-ms-fill-upper {
+  border: 0px solid #010101;
+  border-radius: 42.6px;
+  box-shadow: 0px 0px 0.4px #000000, 0px 0px 0px #0d0d0d; }
+
+.range_item::-ms-thumb {
+  box-shadow: 0px 0px 0.6px #000000, 0px 0px 0px #0d0d0d;
+  border: 5.7px solid #1f3262;
+  height: 36px;
+  width: 36px;
+  border-radius: 27px;
+  background: #f2ffff;
+  cursor: pointer;
+  height: 12px; }
+
+.range_item:focus::-ms-fill-lower {
+  background: rgba(255, 255, 255, 0.78); }
+
+.range_item:focus::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.78); }
+
+.range_dim::-ms-fill-lower {
+  background-color: #add8e6;
+  box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-webkit-slider-runnable-track {
+  background-color: #add8e6;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-moz-range-track {
+  background-color: #add8e6;
+  box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-webkit-slider-thumb {
+  background-color: #7d8cf1;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0; }
+
+.range_dim::-moz-range-thumb {
+  background-color: #7d8cf1;
+  box-shadow: none;
+  border: 0; }
+
+.range_dim::-ms-thumb {
+  background-color: #7d8cf1;
+  box-shadow: none;
+  border: 0; }
+
+.range_dim::-webkit-slider-runnable-track {
+  background-color: #add8e6;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.range_dim:focus::-webkit-slider-runnable-track {
+  background-color: #add8e6;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.range_dim::-ms-fill-lower {
+  background-color: #add8e6;
+  box-shadow: none; }
+
+.rande_bright::-ms-fill-lower {
+  background-color: #fff;
+  box-shadow: none; }
+
+.rande_bright::-webkit-slider-runnable-track {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.rande_bright::-moz-range-track {
+  background-color: #fff;
+  box-shadow: none; }
+
+.toggle_aside {
+  overflow: hidden;
+  -ms-flex-preferred-size: 10% !important;
+  flex-basis: 10% !important;
+  width: 150px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .toggle_aside button {
+    position: relative;
+    left: 6%; }
+
+.toggle_cabinet {
+  -ms-flex-preferred-size: 90% !important;
+  flex-basis: 90% !important;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.toggle_aside .menu-item__button {
+  padding-left: 300px; }
+
+@media (max-width: 1800px) {
+  .menu-item__button-icon--toggle {
+    left: 89px; } }
+
+@media (max-width: 1500px) {
+  .menu-item__button-icon--toggle {
+    left: 68px; } }
+
+@media (max-width: 1300px) {
+  .menu-item__button-icon--toggle {
+    left: 58px; } }
+.acc_rep {
+  margin-top: 10px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 645px;
+  height: 385px;
+  background-color: #804eee;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+.acc_rep__container_button {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+.acc_rep__button {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  /*margin-bottom: 21px;*/
+  width: 100%;
+  height: 98px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: 'Stolzl';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 41.45px; }
+.acc_rep__button:hover {
+  background-color: rgba(0, 0, 0, 0.5); }
+.acc_rep__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+.acc_rep__info .period {
+  text-align: center;
+  opacity: 0.45;
+  color: #ffffff;
+  font-family: "Stolzl Book";
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 41.45px; }
+.acc_rep__info .period a {
+  margin-right: 10px;
+  color: #fff; }
+.acc_rep .cash {
+  color: #ffffff;
+  font-family: 'Stolzl';
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 0;
+  /*margin-top: 70px;
+    margin-bottom: 20px;*/ }
+.acc_rep .btc {
+  position: relative;
+  top: -15px;
+  color: #ffffff;
+  font-size: 31px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Stolzl Book";
+  font-size: 22px;
+  font-weight: 300;
+  font-weight: 400; }
+.acc_rep .stock_exchanges {
+  width: inherit; }
+.acc_rep .stock_exchanges.buttons_kit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+.acc_rep .stock_exchanges__button {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  width: 200px;
+  height: 51px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #5c6dea;
+  color: #ffffff;
+  font-family: 'Stolzl';
+  font-size: 21px;
+  font-weight: 400; }
+.acc_rep .stock_exchanges__button:hover {
+  background-color: #ffffff;
+  color: #000; }
+
+.rotateHidden {
+  -webkit-transform: perspective(900px) rotateX(-90deg);
+  transform: perspective(900px) rotateX(-90deg);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.rotation90 {
+  -webkit-transform: perspective(900px) rotateX(90deg);
+  transform: perspective(900px) rotateX(90deg);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.rotation180 {
+  -webkit-transform: perspective(900px) rotateX(0deg);
+  transform: perspective(900px) rotateX(0deg);
+  -webkit-transition: .9s;
+  -o-transition: .9s;
+  transition: .9s; }
