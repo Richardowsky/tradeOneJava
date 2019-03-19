@@ -19,7 +19,42 @@ input, button {
 
 body {
   margin: 0; }
+/*SELECT start*/
+.select2-results__option{
+  color: #bbcae7 !important;
+}
+.select2-selection {
+  width: 506px;
+  border-radius: 0 !important;
+  border: 0 !important ;
+  padding: 30px;
 
+}
+.select2-selection.select2-selection--single{
+    height: 86px !important;
+    margin-bottom: 30px;
+}
+.select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 33px !important;
+    right: 1px;
+    width: 20px;
+  }
+.select2-dropdown.select2-dropdown--below{
+  font-family: 'Stolzl';
+  width: 508px !important;
+  position:relative;
+  top: -31px;
+}
+.select2-selection__rendered{
+    color: #bbcae7 !important; 
+    padding-left: 0px  !important; 
+}
+.select2-search__field{
+  display: none;
+}
+/*SELECT end*/
 .list {
   padding: 0;
   margin: 0; }

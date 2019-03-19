@@ -1,3 +1,12 @@
+// SELECT
+
+$(document).ready(function() {
+  console.log('select');
+    $('#select-country').select2();
+});
+
+
+
 // Registration page
 
 const trueRadioInvestor = document.querySelector('.radiobuttons__investor-true');
@@ -80,24 +89,7 @@ acceptanceSign.addEventListener('click', (e) => {
 
 // СЕЛЕКТ
 
-const select = document.querySelector('.select');
-// console.log(select);
-const selectMenu = select.querySelector('.select__list');
-// console.log(selectMenu);
 
-select.addEventListener('click', (e) => {
-    // console.log('this is select');
-    selectMenu.classList.toggle('hidden');
-  
-    // TODO: reusable select
-    if (e.target.classList.contains('select__item')) {
-      // console.log('this is not select');
-   
-      select.textContent = e.target.textContent;
-      selectMenu.classList.add('hidden');
-      select.addEventListener('click', test);
-    }
-});
 
 // Login page
 

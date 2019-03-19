@@ -7,6 +7,7 @@
   <title>TradeOne</title>
   <!--<link rel="stylesheet" href="libs/normalize.css">-->
   <link rel="stylesheet" href="../static/css/general.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="header header--registration">
@@ -46,15 +47,12 @@
               </div>
             <input class="form__field" name="last-name" type="text" value="Last name">
             <input class="form__field" name="email" type="text" value="Email">
-            <div class="form__field form__field--select select" name="select" aria-label="country">
-              Select the option
-              <button class="select__arrow"></button>
-              <ul class="list select__list hidden">
-                <li class="select__item form__field">test</li>
-                <li class="select__item form__field">test</li>
-                <li class="select__item form__field">test</li>
-              </ul>
-            </div>
+            <select id="select-country" name="states[]" class="form__field form__field--select select" name="select" aria-label="country">
+             <option value="ZB">Zimbabve</option>
+             <option value="UK">Ukraine</option> 
+             <option value="RU">Russia</option>
+             <option value="GO">Gonduras</option>
+            </select>
             <input class="form__field" name="re-password" type="text" value="Repeat password">
           </div>
           <div class="form-wrapper form-wrapper--extra">
@@ -97,6 +95,14 @@
       </form>
     </div>
   </main>
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.full.min.js"></script>
+  
   <script src="../static/js/index.js"></script>
 </body>
 </html>
