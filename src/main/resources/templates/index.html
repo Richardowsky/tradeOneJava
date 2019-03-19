@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>TradeOne</title>
-  <!--<link rel="stylesheet" href="libs/normalize.css">-->
-  <link rel="stylesheet" href="../static/css/general.css">
+  <title>Trade One</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="date-picker-custom-styles.css">
+  <link rel="stylesheet" href="general.css">
 </head>
 <body>
   <header class="header header--registration">
@@ -22,7 +24,7 @@
         <span class="main__title-sign-up hidden">Sign up</span>
         <span class="main__title-sign-in">Sign in</span>
       </h1>
-      <form class="form form--sign-up form--sign-in" action="#" method="post"  enctype="multipart/form-data">
+      <form class="form form--sign-up form--sign-in">
         <div class="form-wrapper form-wrapper--outer">
           <div class="form-wrapper form-wrapper--inner form-wrapper-first">
               <div class="radiobuttons__wrapper alarm radiobuttons__wrapper--investor">
@@ -69,7 +71,7 @@
             </div>
             <div class="buttons-kit">
               <button class="button button--photo">
-                  <svg class="button__upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33.293 33.293" style="enable-background:new 0 0 33.293 33.293;" xml:space="preserve"><g><g><path d="M16.646,24.786L16.646,24.786c-0.276,0-0.5-0.224-0.5-0.5l0.001-11.279c0-0.276,0.224-0.5,0.5-0.5l0,0    c0.276,0,0.5,0.224,0.5,0.5l-0.001,11.279C17.146,24.562,16.922,24.786,16.646,24.786z"/><path d="M16.646,24.786c-0.128,0-0.256-0.049-0.354-0.146l-4.313-4.313c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0    l3.959,3.959l3.959-3.959c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707l-4.313,4.313    C16.902,24.737,16.774,24.786,16.646,24.786z"/></g><g><path d="M27.578,33.293H5.715c-1.378,0-2.5-1.121-2.5-2.5V2.5c0-1.379,1.122-2.5,2.5-2.5h15.877c0.276,0,0.5,0.224,0.5,0.5    S21.868,1,21.592,1H5.715c-0.827,0-1.5,0.673-1.5,1.5v28.293c0,0.827,0.673,1.5,1.5,1.5h21.863c0.827,0,1.5-0.673,1.5-1.5V8.704    c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v22.09C30.078,32.172,28.957,33.293,27.578,33.293z"/><path d="M29.578,9.204h-7.986c-0.276,0-0.5-0.224-0.5-0.5V0.717c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v7.486h7.486    c0.276,0,0.5,0.224,0.5,0.5S29.855,9.204,29.578,9.204z"/><path d="M29.578,9.204c-0.13,0-0.26-0.051-0.358-0.151l-7.986-8.203c-0.192-0.197-0.188-0.515,0.01-0.707    c0.197-0.193,0.514-0.188,0.707,0.01l7.986,8.203c0.192,0.197,0.188,0.515-0.01,0.707C29.83,9.157,29.704,9.204,29.578,9.204z"/></g></g></svg>
+                <svg class="button__upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33.293 33.293" style="enable-background:new 0 0 33.293 33.293;" xml:space="preserve"><g><g><path d="M16.646,24.786L16.646,24.786c-0.276,0-0.5-0.224-0.5-0.5l0.001-11.279c0-0.276,0.224-0.5,0.5-0.5l0,0    c0.276,0,0.5,0.224,0.5,0.5l-0.001,11.279C17.146,24.562,16.922,24.786,16.646,24.786z"/><path d="M16.646,24.786c-0.128,0-0.256-0.049-0.354-0.146l-4.313-4.313c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0    l3.959,3.959l3.959-3.959c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707l-4.313,4.313    C16.902,24.737,16.774,24.786,16.646,24.786z"/></g><g><path d="M27.578,33.293H5.715c-1.378,0-2.5-1.121-2.5-2.5V2.5c0-1.379,1.122-2.5,2.5-2.5h15.877c0.276,0,0.5,0.224,0.5,0.5    S21.868,1,21.592,1H5.715c-0.827,0-1.5,0.673-1.5,1.5v28.293c0,0.827,0.673,1.5,1.5,1.5h21.863c0.827,0,1.5-0.673,1.5-1.5V8.704    c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v22.09C30.078,32.172,28.957,33.293,27.578,33.293z"/><path d="M29.578,9.204h-7.986c-0.276,0-0.5-0.224-0.5-0.5V0.717c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v7.486h7.486    c0.276,0,0.5,0.224,0.5,0.5S29.855,9.204,29.578,9.204z"/><path d="M29.578,9.204c-0.13,0-0.26-0.051-0.358-0.151l-7.986-8.203c-0.192-0.197-0.188-0.515,0.01-0.707    c0.197-0.193,0.514-0.188,0.707,0.01l7.986,8.203c0.192,0.197,0.188,0.515-0.01,0.707C29.83,9.157,29.704,9.204,29.578,9.204z"/></g></g></svg>
                 Upload your photo
               </button>
               <a class="button button--sign-in" href="#">Sign In</a>
@@ -82,7 +84,7 @@
                   Sign up
                 </button>
               </div>
-              <a class="button button--sign-up hidden" href="/investor/cabinet">Sign Up</a>
+              <a class="button button--sign-up hidden" href="#">Sign Up</a>
               <div class="account-existance account-existance--sign-in">
                 <span class="account-existance__question">
                   Don't you have an account?
@@ -97,6 +99,9 @@
       </form>
     </div>
   </main>
-  <script src="../static/js/index.js"></script>
+  <script src="index.js"></script>
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script src="date-picker.js"></script>
 </body>
 </html>
