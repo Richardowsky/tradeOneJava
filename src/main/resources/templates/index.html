@@ -4,173 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Trade One</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="../static/js/jquery-ui-1.12.1/jquery-ui.css">
-  <link rel="stylesheet" href="../static/css/date-picker-custom-styles.css">
+  <title>TradeOne</title>
+  <!--<link rel="stylesheet" href="libs/normalize.css">-->
   <link rel="stylesheet" href="../static/css/general.css">
 </head>
 <body>
-<header class="header header--registration">
-  <div class="container header__container">
-    <a class="logo logo--header" href="#">
-      <div class="logo__image"></div>
-    </a>
-  </div>
-</header>
-<main class="main">
-  <div class="container">
-    <h1 class="main__title main__title--sign-up">
-      <span class="main__title-sign-up hidden">Sign up</span>
-      <span class="main__title-sign-in">Sign in</span>
-    </h1>
-    <form class="form form--sign-in" action="/" method="POST">
-      <div class="form-wrapper form-wrapper--outer">
-        <div class="form-wrapper--inner">
-          <input class="form__field" name="username" type="text" value="Login">
-          <input class="form__field" name="password" type="text" value="Password">
-        </div>
-      </div>
-      <div class="buttons-kit buttons-kit--login">
-        <button class="button button--photo">
-          <svg class="button__upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33.293 33.293" style="enable-background:new 0 0 33.293 33.293;" xml:space="preserve"><g><g><path d="M16.646,24.786L16.646,24.786c-0.276,0-0.5-0.224-0.5-0.5l0.001-11.279c0-0.276,0.224-0.5,0.5-0.5l0,0    c0.276,0,0.5,0.224,0.5,0.5l-0.001,11.279C17.146,24.562,16.922,24.786,16.646,24.786z"/><path d="M16.646,24.786c-0.128,0-0.256-0.049-0.354-0.146l-4.313-4.313c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0    l3.959,3.959l3.959-3.959c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707l-4.313,4.313    C16.902,24.737,16.774,24.786,16.646,24.786z"/></g><g><path d="M27.578,33.293H5.715c-1.378,0-2.5-1.121-2.5-2.5V2.5c0-1.379,1.122-2.5,2.5-2.5h15.877c0.276,0,0.5,0.224,0.5,0.5    S21.868,1,21.592,1H5.715c-0.827,0-1.5,0.673-1.5,1.5v28.293c0,0.827,0.673,1.5,1.5,1.5h21.863c0.827,0,1.5-0.673,1.5-1.5V8.704    c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v22.09C30.078,32.172,28.957,33.293,27.578,33.293z"/><path d="M29.578,9.204h-7.986c-0.276,0-0.5-0.224-0.5-0.5V0.717c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v7.486h7.486    c0.276,0,0.5,0.224,0.5,0.5S29.855,9.204,29.578,9.204z"/><path d="M29.578,9.204c-0.13,0-0.26-0.051-0.358-0.151l-7.986-8.203c-0.192-0.197-0.188-0.515,0.01-0.707    c0.197-0.193,0.514-0.188,0.707,0.01l7.986,8.203c0.192,0.197,0.188,0.515-0.01,0.707C29.83,9.157,29.704,9.204,29.578,9.204z"/></g></g></svg>
-          Upload your photo
-        </button>
-        <a class="button button--sign-in" href="cabinet.html">Sign In</a>
-        <span class="buttons-kit__choice">Or</span>
-        <div class="account-existance account-existance--sign-up">
-                <span class="account-existance__question">
-                  Don't you have an account?
-                </span>
-          <button class="account-existance__sign-up" type="submit">
-            Sign up
-          </button>
-        </div>
-        <!--<a class="button button&#45;&#45;sign-up hidden" href="../static/cabinet.html">Sign Up</a>-->
-        <div class="account-existance account-existance--sign-in">
-                <span class="account-existance__question">
-                  Don't you have an account?
-                </span>
-          <button class="account-existance__sign-in" type="submit">
-            Sign in
-          </button>
-        </div>
-      </div>
-    </form>
-    <form class="form form--sign-up" action="/registration/investor" method="post">
-      <div class="form-wrapper form-wrapper--outer">
-        <div class="form-wrapper form-wrapper--inner form-wrapper-first">
-          <div class="radiobuttons__wrapper alarm radiobuttons__wrapper--investor">
-            <label class="radiobuttons__investor-false">
-              <input class="radiobuttons__investor-true" type="radio" name="investor" value="false">
-              Sign up as an investor
-            </label>
+  <header class="header header--registration">
+    <div class="container header__container">
+      <a class="logo logo--header" href="#">
+        <div class="logo__image"></div>
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <h1 class="main__title main__title--sign-up">
+        <span class="main__title-sign-up hidden">Sign up</span>
+        <span class="main__title-sign-in">Sign in</span>
+      </h1>
+      <form class="form form--sign-up form--sign-in" action="#" method="post"  enctype="multipart/form-data">
+        <div class="form-wrapper form-wrapper--outer">
+          <div class="form-wrapper form-wrapper--inner form-wrapper-first">
+              <div class="radiobuttons__wrapper alarm radiobuttons__wrapper--investor">
+                <label class="radiobuttons__investor-false">
+                  <input class="radiobuttons__investor-true" type="radio" name="investor" value="false">
+                  Sign up as an investor
+                </label>
+              </div>
+            <input class="form__field" name="first-name" type="text" value="Name">
+            <input class="form__field" name="username" type="text" value="Username">
+            <input class="form__field" name="birth-date" type="text" value="1111-11-11">
+            <input class="form__field" name="login" type="text" value="Login">
+            <input class="form__field" name="password" type="text" value="Password">
           </div>
-          <input class="form__field" name="first-name" type="text" value="Name">
-          <input class="form__field" name="username" type="text" value="Username">
-          <input class="form__field" name="birth-date" type="text" value="Date of birth">
-          <input class="form__field" name="login" type="text" value="Login">
-          <input class="form__field" name="password" type="text" value="Password">
-        </div>
-        <div class="form-wrapper form-wrapper--inner form-wrapper-second hidden">
-          <div class="radiobuttons__wrapper alarm radiobuttons__wrapper--trader">
-            <label class="radiobuttons__trader-false">
-              <input class="radiobuttons__trader-true" type="radio" name="trader" value="false">
-              Sign up as a trader
-            </label>
+          <div class="form-wrapper form-wrapper--inner form-wrapper-second hidden">
+              <div class="radiobuttons__wrapper alarm radiobuttons__wrapper--trader">
+                <label class="radiobuttons__trader-false">
+                  <input class="radiobuttons__trader-true" type="radio" name="trader" value="false">
+                  Sign up as a trader
+                </label>
+              </div>
+            <input class="form__field" name="last-name" type="text" value="Last name">
+            <input class="form__field" name="email" type="text" value="Email">
+            <div class="form__field form__field--select select" name="select" aria-label="country">
+              Select the option
+              <button class="select__arrow"></button>
+              <ul class="list select__list hidden">
+                <li class="select__item form__field">test</li>
+                <li class="select__item form__field">test</li>
+                <li class="select__item form__field">test</li>
+              </ul>
+            </div>
+            <input class="form__field" name="re-password" type="text" value="Repeat password">
           </div>
-          <input class="form__field" name="last-name" type="text" value="Last name">
-          <input class="form__field" name="email" type="text" value="Email">
-          <div class="form__field form__field--select select" name="select" aria-label="country">
-            Select the option
-            <button class="select__arrow"></button>
-            <ul class="list select__list hidden">
-              <li class="select__item form__field">England</li>
-              <li class="select__item form__field">China</li>
-              <li class="select__item form__field">Russia</li>
-              <li class="select__item form__field">France</li>
-              <li class="select__item form__field">South Korea</li>
-              <li class="select__item form__field">Japan</li>
-              <li class="select__item form__field">Germany</li>
-              <li class="select__item form__field">Ukraine</li>
-              <li class="select__item form__field">Italy</li>
-              <li class="select__item form__field">Spain</li>
-              <li class="select__item form__field">Canada</li>
-              <li class="select__item form__field">Turkey</li>
-            </ul>
-          </div>
-          <input class="form__field" name="re-password" type="text" value="Repeat password">
-        </div>
-        <div class="form-wrapper form-wrapper--extra">
-          <div class="radiobuttons__wrapper radiobuttons__wrapper--acceptance">
-            <button class="radiobuttons__acceptance">
-              <div class="radiobuttons__acceptance-checkbox"></div>
-              I accept the Trade-One.io
-              <span class="radiobuttons__emphasize">
+          <div class="form-wrapper form-wrapper--extra">
+            <div class="radiobuttons__wrapper radiobuttons__wrapper--acceptance">
+              <button class="radiobuttons__acceptance">
+                <div class="radiobuttons__acceptance-checkbox"></div>
+                I accept the Trade-One.io 
+                <span class="radiobuttons__emphasize">
                   Terms and conditions
                 </span>
-            </button>
-          </div>
-          <div class="buttons-kit buttons-kit--registr">
-            <button class="button button--photo">
-              <svg class="button__upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33.293 33.293" style="enable-background:new 0 0 33.293 33.293;" xml:space="preserve"><g><g><path d="M16.646,24.786L16.646,24.786c-0.276,0-0.5-0.224-0.5-0.5l0.001-11.279c0-0.276,0.224-0.5,0.5-0.5l0,0    c0.276,0,0.5,0.224,0.5,0.5l-0.001,11.279C17.146,24.562,16.922,24.786,16.646,24.786z"/><path d="M16.646,24.786c-0.128,0-0.256-0.049-0.354-0.146l-4.313-4.313c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0    l3.959,3.959l3.959-3.959c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707l-4.313,4.313    C16.902,24.737,16.774,24.786,16.646,24.786z"/></g><g><path d="M27.578,33.293H5.715c-1.378,0-2.5-1.121-2.5-2.5V2.5c0-1.379,1.122-2.5,2.5-2.5h15.877c0.276,0,0.5,0.224,0.5,0.5    S21.868,1,21.592,1H5.715c-0.827,0-1.5,0.673-1.5,1.5v28.293c0,0.827,0.673,1.5,1.5,1.5h21.863c0.827,0,1.5-0.673,1.5-1.5V8.704    c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v22.09C30.078,32.172,28.957,33.293,27.578,33.293z"/><path d="M29.578,9.204h-7.986c-0.276,0-0.5-0.224-0.5-0.5V0.717c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v7.486h7.486    c0.276,0,0.5,0.224,0.5,0.5S29.855,9.204,29.578,9.204z"/><path d="M29.578,9.204c-0.13,0-0.26-0.051-0.358-0.151l-7.986-8.203c-0.192-0.197-0.188-0.515,0.01-0.707    c0.197-0.193,0.514-0.188,0.707,0.01l7.986,8.203c0.192,0.197,0.188,0.515-0.01,0.707C29.83,9.157,29.704,9.204,29.578,9.204z"/></g></g></svg>
-              Upload photo
-            </button>
-            <a class="button button--sign-up" href="cabinet.html" >Sign Up</a>
-            <div class="account-existance-wrapper">
+              </button>
+            </div>
+            <div class="buttons-kit">
+              <button class="button button--photo">
+                  <svg class="button__upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33.293 33.293" style="enable-background:new 0 0 33.293 33.293;" xml:space="preserve"><g><g><path d="M16.646,24.786L16.646,24.786c-0.276,0-0.5-0.224-0.5-0.5l0.001-11.279c0-0.276,0.224-0.5,0.5-0.5l0,0    c0.276,0,0.5,0.224,0.5,0.5l-0.001,11.279C17.146,24.562,16.922,24.786,16.646,24.786z"/><path d="M16.646,24.786c-0.128,0-0.256-0.049-0.354-0.146l-4.313-4.313c-0.195-0.195-0.195-0.512,0-0.707s0.512-0.195,0.707,0    l3.959,3.959l3.959-3.959c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707l-4.313,4.313    C16.902,24.737,16.774,24.786,16.646,24.786z"/></g><g><path d="M27.578,33.293H5.715c-1.378,0-2.5-1.121-2.5-2.5V2.5c0-1.379,1.122-2.5,2.5-2.5h15.877c0.276,0,0.5,0.224,0.5,0.5    S21.868,1,21.592,1H5.715c-0.827,0-1.5,0.673-1.5,1.5v28.293c0,0.827,0.673,1.5,1.5,1.5h21.863c0.827,0,1.5-0.673,1.5-1.5V8.704    c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v22.09C30.078,32.172,28.957,33.293,27.578,33.293z"/><path d="M29.578,9.204h-7.986c-0.276,0-0.5-0.224-0.5-0.5V0.717c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5v7.486h7.486    c0.276,0,0.5,0.224,0.5,0.5S29.855,9.204,29.578,9.204z"/><path d="M29.578,9.204c-0.13,0-0.26-0.051-0.358-0.151l-7.986-8.203c-0.192-0.197-0.188-0.515,0.01-0.707    c0.197-0.193,0.514-0.188,0.707,0.01l7.986,8.203c0.192,0.197,0.188,0.515-0.01,0.707C29.83,9.157,29.704,9.204,29.578,9.204z"/></g></g></svg>
+                Upload your photo
+              </button>
+              <a class="button button--sign-in" href="#">Sign In</a>
               <span class="buttons-kit__choice">Or</span>
+              <div class="account-existance account-existance--sign-up">
+                <span class="account-existance__question">
+                  Don't you have an account?
+                </span>
+                <button class="account-existance__sign-up">
+                  Sign up
+                </button>
+              </div>
+              <a class="button button--sign-up hidden" href="/investor/cabinet">Sign Up</a>
               <div class="account-existance account-existance--sign-in">
-                  <span class="account-existance__question">
-                    Don't you have an account?
-                  </span>
-                <button class="account-existance__sign-in" type="submit">
+                <span class="account-existance__question">
+                  Don't you have an account?
+                </span>
+                <button class="account-existance__sign-in">
                   Sign in
                 </button>
               </div>
             </div>
-            <!-- <span class="buttons-kit__choice">Or</span>
-            <div class="account-existance account-existance--sign-in">
-              <span class="account-existance__question">
-                Don't you have an account?
-              </span>
-              <button class="account-existance__sign-in">
-                Sign in
-              </button>
-            </div> -->
           </div>
         </div>
-      </div>
-    </form>
-  </div>
-</main>
-<div class="popup">
-  <div class="agreement">
-    <div class="agreement__container">
-      <div class="agreement__contant">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-      </div>
+      </form>
     </div>
-  </div>
-</div>
-<script src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-
-<script src="../static/js/select2.full.min.js"></script>
-<script src="../static/js/index.js"></script>
-<script src="../static/js/jquery-ui-1.12.1/external/jquery/jquery.js"></script>
-<script src="../static/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-<script src="../static/js/date-picker.js"></script>
+  </main>
+  <script src="../static/js/index.js"></script>
 </body>
 </html>

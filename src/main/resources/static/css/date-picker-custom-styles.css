@@ -47,4 +47,12 @@
 .ui-datepicker-prev .ui-corner-all {
   background-image: url('icons/arrow-circle-right-solid.svg');
   background-size: cover;
+<<<<<<< HEAD
 }
+=======
+}
+/* .ui-datepicker-next .ui-corner-all {
+  background-image: url('icons/arrow-circle-left-solid.svg');
+  background-size: cover;
+} */
+>>>>>>> origin/master
