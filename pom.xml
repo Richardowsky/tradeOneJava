@@ -45,9 +45,9 @@
     </dependency>
     <!-- Add database migration support -->
     <!--<dependency>-->
-      <!--<groupId>org.flywaydb</groupId>-->
-      <!--<artifactId>flyway-core</artifactId>-->
-      <!--<version>3.0</version>-->
+    <!--<groupId>org.flywaydb</groupId>-->
+    <!--<artifactId>flyway-core</artifactId>-->
+    <!--<version>3.0</version>-->
     <!--</dependency>-->
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependency>
@@ -85,16 +85,16 @@
     </dependency>
   </dependencies>
 
-<repositories>
-  <repository>
-    <id>api-v1-client-java-mvn-repo</id>
-    <url>https://raw.githubusercontent.com/blockchain/api-v1-client-java/mvn-repo/</url>
-    <snapshots>
-      <enabled>true</enabled>
-      <updatePolicy>always</updatePolicy>
-    </snapshots>
-  </repository>
-</repositories>
+  <repositories>
+    <repository>
+      <id>api-v1-client-java-mvn-repo</id>
+      <url>https://raw.githubusercontent.com/blockchain/api-v1-client-java/mvn-repo/</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>
 
 
   <build>

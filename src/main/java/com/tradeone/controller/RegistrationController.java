@@ -33,50 +33,50 @@ public class RegistrationController {
 
 
   @RequestMapping(value = "/investor", method = RequestMethod.POST)
-  public void createInvestor(@RequestBody InvestorDto investorDto,   @RequestParam("file") MultipartFile file)
+  public void createInvestor(@RequestBody InvestorDto investorDto)
       throws APIException, IOException {
-    saveFile(investorDto,file);
+//    saveFile(investorDto,file);
     investorService.addNewInvestor(investorDto);
   }
 
   @RequestMapping(value = "/trader", method = RequestMethod.POST)
-  public void createTrader(@RequestBody TraderDto traderDto,   @RequestParam("file") MultipartFile file)
+  public void createTrader(@RequestBody TraderDto traderDto)
       throws IOException {
-    saveTraderFile(traderDto, file);
+//    saveTraderFile(traderDto, file);
     traderService.addNewTrader(traderDto);
   }
 
-  private void saveFile(InvestorDto investorDto, @RequestParam("file") MultipartFile file) throws IOException {
-    if (file != null && !file.getOriginalFilename().isEmpty()) {
-      File uploadDir = new File(uploadPath);
-
-      if (!uploadDir.exists()) {
-        uploadDir.mkdir();
-      }
-
-      String uuidFile = UUID.randomUUID().toString();
-      String resultFilename = uuidFile + "." + file.getOriginalFilename();
-
-      file.transferTo(new File(uploadPath + "/" + resultFilename));
-
-      investorDto.setFilename(resultFilename);
-    }
+//  private void saveFile(InvestorDto investorDto, @RequestParam("file") MultipartFile file) throws IOException {
+//    if (file != null && !file.getOriginalFilename().isEmpty()) {
+//      File uploadDir = new File(uploadPath);
+//
+//      if (!uploadDir.exists()) {
+//        uploadDir.mkdir();
+//      }
+//
+//      String uuidFile = UUID.randomUUID().toString();
+//      String resultFilename = uuidFile + "." + file.getOriginalFilename();
+//
+//      file.transferTo(new File(uploadPath + "/" + resultFilename));
+//
+//      investorDto.setFilename(resultFilename);
+//    }
+//  }
+//  private void saveTraderFile(TraderDto traderDto, @RequestParam("file") MultipartFile file) throws IOException {
+//    if (file != null && !file.getOriginalFilename().isEmpty()) {
+//      File uploadDir = new File(uploadPath);
+//
+//      if (!uploadDir.exists()) {
+//        uploadDir.mkdir();
+//      }
+//
+//      String uuidFile = UUID.randomUUID().toString();
+//      String resultFilename = uuidFile + "." + file.getOriginalFilename();
+//
+//      file.transferTo(new File(uploadPath + "/" + resultFilename));
+//
+//      traderDto.setFilename(resultFilename);
+//    }
   }
-  private void saveTraderFile(TraderDto traderDto, @RequestParam("file") MultipartFile file) throws IOException {
-    if (file != null && !file.getOriginalFilename().isEmpty()) {
-      File uploadDir = new File(uploadPath);
 
-      if (!uploadDir.exists()) {
-        uploadDir.mkdir();
-      }
-
-      String uuidFile = UUID.randomUUID().toString();
-      String resultFilename = uuidFile + "." + file.getOriginalFilename();
-
-      file.transferTo(new File(uploadPath + "/" + resultFilename));
-
-      traderDto.setFilename(resultFilename);
-    }
-  }
-}
 

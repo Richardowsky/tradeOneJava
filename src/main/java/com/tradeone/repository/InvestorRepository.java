@@ -10,5 +10,5 @@ public interface InvestorRepository extends JpaRepository<Investor, Long> {
 
   Optional<Investor> getById(Long userId);
 
-  Optional<Investor> getAllByNickName(String login);
+  Optional<Investor> getAllByUsername(String username);
 }

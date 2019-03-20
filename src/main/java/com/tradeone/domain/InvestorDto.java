@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class InvestorDto {
-  private String nickName;
+  private String username;
   private String firstName;
   private String lastName;
   private String password;

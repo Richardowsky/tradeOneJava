@@ -1,7 +1,5 @@
 package com.tradeone.domain;
 
-import com.tradeone.photo.Picture;
-import java.time.LocalDate;
 import lombok.Data;
 
 @Data

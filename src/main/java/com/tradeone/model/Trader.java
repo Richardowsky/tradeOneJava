@@ -2,7 +2,6 @@ package com.tradeone.model;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
-import com.tradeone.photo.Picture;
 import java.time.LocalDate;
 import java.util.Set;
 import javax.persistence.CascadeType;

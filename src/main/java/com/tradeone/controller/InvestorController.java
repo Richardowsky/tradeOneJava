@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("investor")
+@RequestMapping("/investor")
 public class InvestorController {
 
   @Autowired
@@ -26,14 +26,14 @@ public class InvestorController {
   private SubscriptionService subscriptionService;
 
 
-  @RequestMapping(value = "/balance", method = GET)
+  @RequestMapping(value = "/balance/{id}", method = GET)
   public AppResponse getBalance(@PathVariable long id
   ) throws APIException, IOException {
     return investorService.getInvestorWalletInfo(id);
   }
 
 
-  @RequestMapping(value = "/address", method = GET)
+  @RequestMapping(value = "/address/{id}", method = GET)
   public AppResponse getInvestorWallet(@PathVariable long id
   ) throws APIException, IOException {
     return investorService.getInvestorWalletAddress(id);
@@ -44,7 +44,7 @@ public class InvestorController {
     return investorService.getTraders();
   }
 
-  @RequestMapping(value = "/subscriptions", method = GET)
+  @RequestMapping(value = "/subscriptions/{id}", method = GET)
   public AppResponse getAllSubscriptions(
       @PathVariable long id) {
     return subscriptionService.getSubscriptions(id);
@@ -61,7 +61,7 @@ public class InvestorController {
 //  }
 
 
-  @RequestMapping(value = "/subscription", method = POST)
+  @RequestMapping(value = "/subscription/{id}", method = POST)
   public String subscriptionOnTrader(@RequestBody SubscriptionDto subscriptionDto,
       @PathVariable long id) throws APIException, IOException {
     subscriptionService.addNewSubscription(subscriptionDto, id);
@@ -69,12 +69,19 @@ public class InvestorController {
     return "all ok";
   }
 
-
+//  @RequestMapping(value = "/transactions/{id}", method = GET)
+//  public AppResponse getTransactions(@PathVariable long id) {
+//    return investorService.getTransactions(id);
+//  }
 
   @RequestMapping(value = "/cabinet", method = GET)
-  public String cabinet(){
-    return "cabinet";
+  public String cabinet() {
+    return "cabinet.html";
   }
-
-
 }
+
+
+
+
+
+

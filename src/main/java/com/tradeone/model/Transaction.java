@@ -2,6 +2,7 @@ package com.tradeone.model;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
+import java.time.LocalDate;
 import java.util.Set;
 import javax.persistence.CollectionTable;
 import javax.persistence.Column;
@@ -30,10 +31,14 @@ public class Transaction {
   private InvestorWallet investorWallet;
   @Column(name = "coins", nullable = false)
   private long coins;
+  @Column(name ="date")
+  private LocalDate transactionDate;
   @ElementCollection(targetClass = TransactionRole.class, fetch = FetchType.EAGER)
   @CollectionTable(name = "transaction_role", joinColumns = @JoinColumn(name = "transaction_id"))
   @Enumerated(EnumType.STRING)
   private Set<TransactionRole> transactionRoles;
+
+
 
 
 }

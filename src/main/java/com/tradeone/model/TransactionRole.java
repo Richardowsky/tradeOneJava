@@ -1,5 +1,5 @@
 package com.tradeone.model;
 
 public enum TransactionRole {
-  IN, OUT;
+  WITHDRAW,CHARGE;
 }
