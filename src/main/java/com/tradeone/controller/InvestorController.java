@@ -4,16 +4,21 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 import com.tradeone.domain.AppResponse;
+import com.tradeone.domain.BinanceApi;
 import com.tradeone.domain.SubscriptionDto;
+import com.tradeone.domain.WalletBITTDto;
+import com.tradeone.domain.WithdrawDto;
+import com.tradeone.model.Investor;
 import com.tradeone.service.InvestorService;
 import com.tradeone.service.SubscriptionService;
 import info.blockchain.api.APIException;
 import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -25,18 +30,49 @@ public class InvestorController {
   @Autowired
   private SubscriptionService subscriptionService;
 
-
-  @RequestMapping(value = "/balance/{id}", method = GET)
-  public AppResponse getBalance(@PathVariable long id
-  ) throws APIException, IOException {
-    return investorService.getInvestorWalletInfo(id);
+  @RequestMapping(value = "/connectApi", method = POST)
+  public void connectApi(@RequestBody BinanceApi binanceApi,
+      @AuthenticationPrincipal Investor investor) {
+    investorService.setApiBinance(investor, binanceApi);
   }
 
 
-  @RequestMapping(value = "/address/{id}", method = GET)
-  public AppResponse getInvestorWallet(@PathVariable long id
+  @RequestMapping(value = "/apiBinance", method = GET)
+  public AppResponse getApiInfo(@AuthenticationPrincipal Investor investor) {
+    return investorService.getApiInfo(investor);
+  }
+
+  @RequestMapping(value = "/balance", method = GET)
+  public AppResponse getBalance(@AuthenticationPrincipal Investor investor
   ) throws APIException, IOException {
-    return investorService.getInvestorWalletAddress(id);
+    return investorService.getInvestorWalletInfo(investor);
+  }
+
+  @RequestMapping(value = "/balanceBITT", method = GET)
+  public AppResponse getBalanceBITT(@AuthenticationPrincipal Investor investor) {
+    return investorService.getInvestorWalletBITT(investor);
+  }
+
+  @RequestMapping(value = "/getTransactionBITT", method = POST)
+  public AppResponse getBalanceBITT(@RequestBody WalletBITTDto walletBITTDto,
+      @AuthenticationPrincipal Investor investor) {
+    return investorService.getBalanceBITT(walletBITTDto, investor);
+  }
+
+  @RequestMapping(value = "/cred", method = GET)
+  public AppResponse getCredentials(@AuthenticationPrincipal Investor investor) {
+    return investorService.getCredentials(investor);
+  }
+
+  @RequestMapping(value = "/address", method = GET)
+  public AppResponse getInvestorWallet(@AuthenticationPrincipal Investor investor
+  ) throws APIException, IOException {
+    return investorService.getInvestorWalletAddress(investor);
+  }
+
+  @RequestMapping(value = "/addressBITT", method = GET)
+  public AppResponse getBITTAddress() throws Exception {
+    return investorService.getWalletBITTAddress();
   }
 
   @RequestMapping(value = "/traders", method = GET)
@@ -44,35 +80,39 @@ public class InvestorController {
     return investorService.getTraders();
   }
 
-  @RequestMapping(value = "/subscriptions/{id}", method = GET)
-  public AppResponse getAllSubscriptions(
-      @PathVariable long id) {
-    return subscriptionService.getSubscriptions(id);
+  @RequestMapping(value = "/history", method = GET)
+  public AppResponse getHistory(@AuthenticationPrincipal Investor investor) {
+    return investorService.getTradingHistory(investor);
   }
 
-  //  @RequestMapping(value = "/send", method = POST)
-//  public void sendToTrader(
-//      @RequestParam long investorId,
-//      @RequestParam long traderId,
-//      @RequestParam long amount,
-//      @RequestParam long fee
-//      ) throws APIException, IOException {
-//    investorService.SendCoinsToTrader(investorId, traderId,amount,fee);
-//  }
+  @RequestMapping(value = "/subscriptions", method = GET)
+  public AppResponse getAllSubscriptions(
+      @AuthenticationPrincipal Investor investor) {
+    return subscriptionService.getSubscriptions(investor);
+  }
 
 
-  @RequestMapping(value = "/subscription/{id}", method = POST)
+  @RequestMapping(value = "/subscription", method = POST)
   public String subscriptionOnTrader(@RequestBody SubscriptionDto subscriptionDto,
-      @PathVariable long id) throws APIException, IOException {
-    subscriptionService.addNewSubscription(subscriptionDto, id);
+      @AuthenticationPrincipal Investor investor) throws APIException, IOException {
+    subscriptionService.addNewSubscription(subscriptionDto, investor);
 
     return "all ok";
   }
 
-//  @RequestMapping(value = "/transactions/{id}", method = GET)
-//  public AppResponse getTransactions(@PathVariable long id) {
-//    return investorService.getTransactions(id);
-//  }
+  @RequestMapping(value = "/withdraw", method = POST)
+  public void withdrawCoins(@RequestBody WithdrawDto withdrawDto,
+      @AuthenticationPrincipal Investor investor) throws APIException, IOException {
+    String address = withdrawDto.getAddress();
+    long coins = withdrawDto.getCoins();
+    investorService.withdrawCoins(address, coins, investor);
+  }
+
+  @RequestMapping(value = "/deleteSubscription/{id}", method = POST)
+  public void deleteSubscription(@PathVariable long id,
+      @AuthenticationPrincipal Investor investor) {
+    subscriptionService.deleteSubscription(id, investor);
+  }
 
   @RequestMapping(value = "/cabinet", method = GET)
   public String cabinet() {

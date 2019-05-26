@@ -11,9 +11,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SubscriptionRepository extends JpaRepository<Subscription, Long> {
 
-  Optional<Subscription> getAllByTraderAndInvestorWallet(Trader trader,
-      InvestorWallet investorWallet);
-
   List<Subscription> findByInvestorWallet(InvestorWallet investorWallet);
 
+  List<Subscription> findByTrader(Trader trader);
+
+
+  Optional<Subscription> getAllByTraderAndInvestorWallet(Trader trader, InvestorWallet investorWallet);
 }

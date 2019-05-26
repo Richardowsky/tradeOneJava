@@ -10,7 +10,5 @@ public interface TraderRepository extends JpaRepository<Trader, Long> {
 
   Optional<Trader> getById(Long userId);
 
-  Optional<Trader> getAllByNickName(String login);
-
   Trader getOneById(Long userId);
 }

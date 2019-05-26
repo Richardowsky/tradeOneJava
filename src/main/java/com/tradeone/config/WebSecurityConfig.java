@@ -17,86 +17,80 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.session.SessionManagementFilter;
 
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-    @Bean
-    CorsFilter corsFilter() {
-        CorsFilter filter = new CorsFilter();
-        return filter;
-    }
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+  @Bean
+  CorsFilter corsFilter() {
+    CorsFilter filter = new CorsFilter();
+    return filter;
+  }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder(11);
-    }
+  @Autowired
+  private PasswordEncoder passwordEncoder;
 
-    @Autowired
-    private InvestorService investorService;
+  @Autowired
+  private InvestorService investorService;
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http
-            .addFilterBefore(corsFilter(), SessionManagementFilter.class)
-            .authorizeRequests()
-            .antMatchers("/**", "/static/**/**","/registration/**").permitAll()
-            .anyRequest().authenticated()
-            .and()
-            .formLogin()
-            .loginPage("/")
-            .permitAll()
-            .and()
-            .logout()
-            .permitAll()
-            .and()
-            .csrf().disable();
-    }
+  @Override
+  protected void configure(HttpSecurity http) throws Exception {
+    http
+        .addFilterBefore(corsFilter(), SessionManagementFilter.class)
+        .authorizeRequests()
+        .antMatchers("/activate/*"
+                ,"/api"
+            ,"/validationName"
+            ,"/validationEmail"
+            , "/name",
+            "/static/**", "/registration/**").permitAll()
+        .anyRequest().authenticated()
+        .and()
+        .formLogin()
+        .defaultSuccessUrl("/cabinet.html", true)
+        .loginPage("/")
+        .permitAll()
+        .and()
+        .logout().invalidateHttpSession(true)
+        .permitAll()
+        .and()
+        .csrf().disable();
+  }
 
-  /*@Autowired
-  public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-    auth.inMemoryAuthentication()
-        .passwordEncoder(passwordEncoder)
-        .withUser("patient")
-        .password("$2a$11$9o0yeUUZW7f8xjL0Be2uYeAiLNJH1rZHGk.dn8yE/8lMXrshwdOBO")
-        .roles("USER_ROLE");
-  }*/
 
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(investorService)
-            .passwordEncoder(NoOpPasswordEncoder.getInstance());
-    }
+  @Override
+  protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    auth.userDetailsService(investorService)
+        .passwordEncoder(passwordEncoder);
+  }
 }
+
 class CorsFilter implements Filter {
 
-    @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+  @Override
+  public void init(FilterConfig filterConfig) throws ServletException {
 
-    }
+  }
 
-    @Override
-    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        HttpServletResponse response = (HttpServletResponse) servletResponse;
-        HttpServletRequest request= (HttpServletRequest) servletRequest;
+  @Override
+  public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
+      FilterChain filterChain) throws IOException, ServletException {
+    HttpServletResponse response = (HttpServletResponse) servletResponse;
+    HttpServletRequest request = (HttpServletRequest) servletRequest;
 
-        response.setHeader("Access-Control-Allow-Origin", "*");
-        response.setHeader("Access-Control-Allow-Methods", "GET,POST,DELETE,PUT,OPTIONS");
-        response.setHeader("Access-Control-Allow-Headers", "*");
-//    response.setHeader("Access-Control-Allow-Credentials", true);
+    response.setHeader("Access-Control-Allow-Origin", "*");
+    response.setHeader("Access-Control-Allow-Methods", "GET,POST,DELETE,PUT,OPTIONS");
+    response.setHeader("Access-Control-Allow-Headers", "*");
+    //response.setHeader("Access-Control-Allow-Credentials", "true");
 //    response.setHeader("Access-Control-Max-Age", 180);
-        filterChain.doFilter(servletRequest, servletResponse);
-    }
+    filterChain.doFilter(servletRequest, servletResponse);
+  }
 
-    @Override
-    public void destroy() {
+  @Override
+  public void destroy() {
 
-    }
+  }
 }

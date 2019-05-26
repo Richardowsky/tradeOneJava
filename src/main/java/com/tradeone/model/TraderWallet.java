@@ -7,11 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import lombok.Data;
 
 @Entity
 @Table(name = "trader_wallet")
-@Data
+
 public class TraderWallet {
   @Id
   @GeneratedValue(strategy = IDENTITY)
@@ -19,4 +18,19 @@ public class TraderWallet {
   @Column(name = "address")
   private String address;
 
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
+  }
 }

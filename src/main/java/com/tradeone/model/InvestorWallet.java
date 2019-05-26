@@ -10,21 +10,18 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import lombok.Data;
 
 @Entity
 @Table(name = "investor_wallet")
-@Data
+
 public class InvestorWallet {
 
-  private final static String URL = "http://localhost:3000/";
-  private final static String API = "551c03a1-1597-4262-9e0b-0a855aaf6e65";
-  private final static String ID = "86b32748-b8a9-4339-9bbe-324dbd5687a4";
-  private final static String PASS = "4164654312dfsfsgda";
+  private final static String URL = "http://127.0.0.1:3000/";
+  private final static String API = "some api key from blockchain";
+  private final static String ID = "some id from from blockchain";
+  private final static String PASS = "some password from blockchain";
 
 
   private static Wallet wallet = new Wallet(URL, API, ID, PASS);
@@ -36,14 +33,81 @@ public class InvestorWallet {
   private String address;
   @Column(name = "free_coins")
   private long freeCoins;
-  @Column(name = "onTrade_coins")
-  private long onTradeCoins;
-  @OneToMany(mappedBy = "investorWallet", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+  @Column(name = "bitt_coins")
+  private double freeBITT;
+
+  @OneToMany(mappedBy = "investorWallet", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
   private Set<Subscription> subscriptions;
-  @OneToMany(mappedBy = "investorWallet", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+  @OneToMany(mappedBy = "investorWallet", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
   private Set<Transaction> transactions;
 
+  public double getFreeBITT() {
+    return freeBITT;
+  }
 
+  public void setFreeBITT(double freeBITT) {
+    this.freeBITT = freeBITT;
+  }
+
+  public static String getURL() {
+    return URL;
+  }
+
+  public static String getAPI() {
+    return API;
+  }
+
+  public static String getID() {
+    return ID;
+  }
+
+  public static String getPASS() {
+    return PASS;
+  }
+
+  public static void setWallet(Wallet wallet) {
+    InvestorWallet.wallet = wallet;
+  }
+
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
+  public long getFreeCoins() {
+    return freeCoins;
+  }
+
+  public void setFreeCoins(long freeCoins) {
+    this.freeCoins = freeCoins;
+  }
+
+  public Set<Subscription> getSubscriptions() {
+    return subscriptions;
+  }
+
+  public void setSubscriptions(Set<Subscription> subscriptions) {
+    this.subscriptions = subscriptions;
+  }
+
+  public Set<Transaction> getTransactions() {
+    return transactions;
+  }
+
+  public void setTransactions(Set<Transaction> transactions) {
+    this.transactions = transactions;
+  }
 
   public Wallet getWallet() {
     return wallet;
